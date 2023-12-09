@@ -41,7 +41,7 @@ const ElementSchema = new mongoose.Schema({
   },
   electronegativity: {
     type: String,
-    default: null // Electronegativity can be null for noble gases etc.
+    default: null 
   }
 });
 

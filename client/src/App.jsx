@@ -21,12 +21,12 @@ function App() {
     );
   }
 
-const AppRoutes = () => (
+function AppRoutes() {
   <Routes>
     <Route path="/login" element={<Login />} />
     <Route path="/" element={<App />} />
     <Route path="*" element={<Navigate to="/login" />} />
   </Routes>
-);
+};
 
 export default App;

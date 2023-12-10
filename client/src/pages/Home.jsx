@@ -48,7 +48,7 @@ const Home = () => {
         </nav>
 
 
-      <div className="title align-center">Welcome to Chem Chicken!</div>
+      <div className="title">Welcome to Chem Chicken!</div>
         <div className="periodic-table-wrapper">
           <div className="periodic-table-title container text-center">
             <div className="row">

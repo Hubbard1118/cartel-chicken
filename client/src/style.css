@@ -3,6 +3,8 @@
 }
 
  .title {
+    width: 100% vw;
+    justify-self: center;
     color: aliceblue;
 }
 

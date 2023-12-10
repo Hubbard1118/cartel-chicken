@@ -48,6 +48,30 @@
     "electronegativity": 3.04
   },
   {
+    "name": "Fluorine",
+    "symbol": "F",
+    "atomicNumber": 9,
+    "atomicMass": 18.998,
+    "category": "Halogen",
+    "group": 17,
+    "period": 2,
+    "block": "p",
+    "electronConfiguration": "[He] 2s2 2p5",
+    "electronegativity": 3.98
+  },
+  {
+    "name": "Chlorine",
+    "symbol": "Cl",
+    "atomicNumber": 17,
+    "atomicMass": 35.453,
+    "category": "Halogen",
+    "group": 17,
+    "period": 2,
+    "block": "p",
+    "electronConfiguration": "[Ne] 3s2 3p5",
+    "electronegativity": 3.16
+  },
+  {
     "name": "Lithium",
     "symbol": "Li",
     "atomicNumber": 3,
@@ -82,18 +106,6 @@
       "block": "p",
       "electronConfiguration": "[He] 2s2 2p1",
       "electronegativity": 2.04
-    },
-    {
-      "name": "Fluorine",
-      "symbol": "F",
-      "atomicNumber": 9,
-      "atomicMass": 18.998,
-      "category": "Halogen",
-      "group": 17,
-      "period": 2,
-      "block": "p",
-      "electronConfiguration": "[He] 2s2 2p5",
-      "electronegativity": 3.98
     },
     {
       "name": "Helium",

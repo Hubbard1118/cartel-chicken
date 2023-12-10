@@ -1,14 +1,25 @@
 const db = require('../config/connection');
-const { Tech } = require('../models');
+const { Elements } = require('../models');
 const cleanDB = require('./cleanDB');
 
-const techData = require('./techData.json');
+const chemData = require('./elementData.json');
+
+db.on('error', (error) => {
+  console.error('MongoDB connection error:', error);
+});
 
 db.once('open', async () => {
-  await cleanDB('Tech', 'teches');
+  try {
+    await cleanDB('Elements', 'elements');
 
-  await Tech.insertMany(techData);
+    // console.log(chemData);
+    await Elements.insertMany(chemData);
 
-  console.log('Technologies seeded!');
-  process.exit(0);
+    console.log('Elements seeded!');
+    process.exit(0);
+  }
+  catch (err) {
+    throw err;
+  }
+  
 });

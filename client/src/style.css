@@ -10,8 +10,13 @@
     color: aliceblue;
 }
 
+/* landing page */
 .welcome-wrapper {
+    justify-content: center;
     display: flex;
+    background-color: aquamarine;
+    width: 100vw;
+    height: 100vh;
 }
 
 .welcomeCard-wrapper {
@@ -30,3 +35,38 @@
 .chicken-container {
     max-width: fit-content;
 }
+/* landing page end */
+
+/* login page */
+.formInputs {
+    padding: 20px;
+} 
+
+#email {
+    margin-bottom: 30px;
+}
+
+#password {
+    margin-top: 30px;
+}
+
+/* #login-wrap {
+    max-width: 800px;
+    max-height: 1000px;
+} */
+
+.loginPage-buttons {
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#loginSubmit {
+    max-width: 550px;
+}
+
+#loginSignupBtn {
+    max-width: 550px;
+}
+/* login page end */

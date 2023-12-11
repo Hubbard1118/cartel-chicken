@@ -1,4 +1,6 @@
+import './periodicTable.css'
 import data from '../PeriodicTableJSON.json';
+
 
 const PeriodicTable = () => {
     return <div className='periodic-table-wrapper'>

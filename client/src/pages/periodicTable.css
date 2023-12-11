@@ -1,0 +1,6 @@
+.periodic-table-wrapper {
+    display: grid;
+    grid-template-columns: repeat(18, auto);
+    grid-template-rows: repeat(10, auto);
+
+}

@@ -4,7 +4,11 @@ import data from '../PeriodicTableJSON.json';
 
 const PeriodicTable = () => {
     return <div className='periodic-table-wrapper'>
-        {data.elements.map(element => <div key={element.name}>{element.symbol}</div>)}
+        {data.elements.map(element => <button key={element.name} style={{
+            gridColumn: element.xpos,
+            gridRow: element.ypos,
+
+            }}>{element.symbol}</button>)}
     </div>;
 };
 

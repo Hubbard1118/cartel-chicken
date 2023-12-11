@@ -10,6 +10,23 @@
     color: aliceblue;
 }
 
+.welcome-wrapper {
+    display: flex;
+}
+
+.welcomeCard-wrapper {
+    display: flex;
+    align-items: center;
+    height: 700px;
+}
+
 .welcome {
+    align-items: center;
     width: 600px;
+    height: 50%;
+    padding-bottom: 20px;
+}
+
+.chicken-container {
+    max-width: fit-content;
 }

@@ -3,6 +3,9 @@ import './style.css';
 import { Outlet } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 
+// React Bootstrap Configuration
+import "bootstrap/dist/css/bootstrap.min.css"
+
 const client = new ApolloClient({
   uri: '/graphql',
   cache: new InMemoryCache(),
@@ -19,3 +22,4 @@ function App() {
 }
 
 export default App;
+

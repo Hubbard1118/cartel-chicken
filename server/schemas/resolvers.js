@@ -15,6 +15,12 @@ const resolvers = {
     element: async (parent, { name }) => {
       return Elements.findOne({ name });
     },
+    compounds: async() => {
+      return Compounds.find();
+    },
+    compound: async (parent, { name }) => {
+      return Compounds.findOne({ name });
+    },
   },
 
   Mutation: {

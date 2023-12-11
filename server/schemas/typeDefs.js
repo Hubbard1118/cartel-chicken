@@ -23,12 +23,19 @@ type Element {
   electronConfiguration: String
   electronegativity: Float
 }
+type Compound {
+  name: String
+  formula: String
+  molecularWeight: Float
+}
 
 type Query {
   users: [User]
   user(username: String!): User
   elements: [Element]
   element(name: String!): Element
+  compounds: [Compound]
+  compound(name:String!): Compound
 }
 
 query Query {
@@ -44,6 +51,13 @@ query Query {
     electronConfiguration
     electronegativity
   }
+
+  Compound {
+    name
+    formula
+    molecularWeight
+  }
+  
 }
 
 type Mutation {

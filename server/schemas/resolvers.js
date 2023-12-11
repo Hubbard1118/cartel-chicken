@@ -34,7 +34,7 @@ const resolvers = {
       }
     },
   },
-  },
+  
 
   Mutation: {
     addUser: async (parent, { username, email, password }) => {

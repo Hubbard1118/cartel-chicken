@@ -66,7 +66,24 @@
     max-width: 550px;
 }
 
-#loginSignupBtn {
+#login-signupBtn {
     max-width: 550px;
 }
 /* login page end */
+
+/* signup page */
+.signupPage-buttons {
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#signupSubmit {
+    max-width: 550px;
+}
+
+#signup-loginBtn {
+    max-width: 550px;
+}
+/* sigup page end */

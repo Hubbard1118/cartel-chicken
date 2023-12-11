@@ -80,7 +80,7 @@ const Login = (props) => {
                     <Link to="/signup">
                       <button
                         className="btn btn-block btn-primary"
-                        id="loginSignupBtn"
+                        id="login-signupBtn"
                         style={{ cursor: 'pointer' }}
                         type="button"
                       >

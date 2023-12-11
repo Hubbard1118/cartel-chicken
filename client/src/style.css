@@ -1,6 +1,6 @@
 
-* {
-}
+/* * {
+} */
 
  .title {
     color: aliceblue;
@@ -8,4 +8,8 @@
 
 .col {
     color: aliceblue;
+}
+
+.welcome {
+    width: 600px;
 }

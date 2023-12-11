@@ -1,4 +1,5 @@
 .periodic-table-wrapper {
+    background-color: aqua;
     display: grid;
     grid-template-columns: repeat(18, auto);
     grid-template-rows: repeat(10, auto);
@@ -7,6 +8,7 @@
 }
 
 .buttons {
-    background-color: purple;
-    background: transparent;
+    font-family: "Poppins", "Georgia";
+    color: silver;
+    background-color: indigo;
 }

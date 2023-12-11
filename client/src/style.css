@@ -1,13 +1,10 @@
-
-* {
-}
-
- .title {
-    width: 100% vw;
+.title {
+    color: blue;
+    width: 100vw;
     justify-self: center;
-    color: aliceblue;
 }
 
 .col {
-    color: aliceblue;
+    color: blue;
+    
 }

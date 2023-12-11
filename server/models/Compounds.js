@@ -9,11 +9,9 @@ const CompoundSchema = new mongoose.Schema({
   formula: {
     type: String,
     required: true,
-    maxlength: 8
   },
   molecularWeight: {
     type: Number,
-    required: true
   }
 });
 

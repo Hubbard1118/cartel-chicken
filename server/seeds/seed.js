@@ -1,8 +1,9 @@
 const db = require('../config/connection');
-const { Elements } = require('../models');
+const { Elements, Compounds } = require('../models');
 const cleanDB = require('./cleanDB');
 
 const chemData = require('./elementData.json');
+const compData = require('./compoundData.json');
 
 db.on('error', (error) => {
   console.error('MongoDB connection error:', error);
@@ -14,6 +15,11 @@ db.once('open', async () => {
 
     // console.log(chemData);
     await Elements.insertMany(chemData);
+
+    await cleanDB('Compounds', 'compounds');
+
+    // console.log(chemData);
+    await Compounds.insertMany(compData);
 
     console.log('Elements seeded!');
     process.exit(0);

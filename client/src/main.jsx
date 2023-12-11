@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import App from './App.jsx';
+import Landing from './pages/Landing.jsx'
 import Home from './pages/Home';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
@@ -18,13 +19,16 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />
+        element: <Landing />
       },{
         path: '/login',
         element: <Login />
       }, {
         path: '/signup',
         element: <Signup />
+      },{
+        path: '/home',
+        element: <Home />
       },
     ],
   },

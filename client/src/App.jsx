@@ -1,8 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import { Outlet } from 'react-router-dom';
-import Login from './Login';
+// import Login from './pages/Login';
 import './App.css';
 import './style.css';
 
@@ -21,6 +21,8 @@ function App() {
     );
   }
 
+  //work in progress
+/*
 function AppRoutes() {
   <Routes>
     <Route path="/login" element={<Login />} />
@@ -28,5 +30,6 @@ function AppRoutes() {
     <Route path="*" element={<Navigate to="/login" />} />
   </Routes>
 };
+*/
 
 export default App;

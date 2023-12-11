@@ -2,5 +2,10 @@
     display: grid;
     grid-template-columns: repeat(18, auto);
     grid-template-rows: repeat(10, auto);
+    gap: 2px;
     padding: 20px;
+}
+
+.buttons {
+    background-color: purple;
 }

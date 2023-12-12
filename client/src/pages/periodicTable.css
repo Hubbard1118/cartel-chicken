@@ -1,6 +1,17 @@
+:root {
+    --fruit-orange: #F95D18ff;
+    --red-orange: #F22926ff;
+    --sky: #0FADB5ff;
+    --dark-sky: rgb(56, 143, 147);
+    --soft-blue: #01809Eff;
+    --gray-blue: rgb(13, 73, 87);
+    --selective-yellow: #FEBB01ff;
+    --soft-yellow: rgb(228, 183, 61);
+}
+
 .periodic-table-wrapper {
 
-    background-color: plum;
+    background-color: var(--sky);
     display: grid;
     height: 500px;
     grid-template-columns: repeat(18, auto);
@@ -16,7 +27,7 @@
 .buttons {
     font-family: "Poppins", "Georgia";
     color: silver;
-    background-color: indigo;
+    background-color: var(--gray-blue);
     border: 1px solid blue;
     border-radius: 4px;
 }

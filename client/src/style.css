@@ -1,10 +1,39 @@
+
 .header {
     color: blue;
     width: 100vw;
     justify-content: center;
 }
 
+/* * {
+} */
+
+ .title {
+    color: aliceblue;
+}
+
 .col {
-    color: blue;
-    
+    color: aliceblue;
+}
+
+.welcome-wrapper {
+    display: flex;
+}
+
+.welcomeCard-wrapper {
+    display: flex;
+    align-items: center;
+    height: 700px;
+}
+
+.welcome {
+    align-items: center;
+    width: 600px;
+    height: 50%;
+    padding-bottom: 20px;
+}
+
+.chicken-container {
+    max-width: fit-content;
+
 }

@@ -1,3 +1,6 @@
+import React from 'react';
+import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+import { Outlet } from 'react-router-dom';
 import './App.css';
 import './style.css';
 import { Outlet } from 'react-router-dom';
@@ -32,7 +35,9 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+
 function App() {
+
   return (
     <ApolloProvider client={client}>
         <Outlet />

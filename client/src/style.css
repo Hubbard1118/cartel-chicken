@@ -2,14 +2,26 @@
     --fruit-orange: #F95D18ff;
     --red-orange: #F22926ff;
     --sky: #0FADB5ff;
+    --dark-sky: rgb(56, 143, 147);
     --soft-blue: #01809Eff;
+    --gray-blue: rgb(13, 73, 87);
     --selective-yellow: #FEBB01ff;
+    --soft-yellow: rgb(228, 183, 61);
 }
 
+
 .header {
-    color: blue;
+    color: var(--gray-blue);
     width: 100vw;
+    display: flex;
     justify-content: center;
+    font-family: 'Finger Paint', sans-serif;
+    font-size: 3rem;
+}
+
+.container-fluid {
+    width: 100vw;
+    padding: 0px;
 }
 
 /* * {
@@ -75,6 +87,41 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+}
+.navbar.navbar-expand-lg {
+    background-color: var(--soft-yellow);
+}
+
+/* .header h1 {
+} */
+
+#home-logout-btn {
+    background-color: var(--red-orange);
+    color: black;
+}
+
+#home-profile-btn {
+    background-color: var(--fruit-orange);
+    color: black;
+}
+
+.home-footer {
+    background: var(--dark-sky);
+    font-size: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+#profile-home-btn {
+    background-color: #FEBB01ff;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
 .profile-wrapper {

@@ -83,6 +83,7 @@ const Signup = () => {
                   >
                     Submit
                   </button>
+                  <a class="btn btn-primary" href="/login" role="button"><b>Login</b></a>
                 </form>
               )}
 

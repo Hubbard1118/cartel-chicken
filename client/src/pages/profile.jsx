@@ -114,6 +114,10 @@ const ProfilePage = () => {
             <li>
               <button onClick={Auth.logout}>Logout</button>
             </li>
+          <br />
+            <li>
+              <a id='profile-home-btn' class="btn btn-primary" href="/home" role="button"><b>Home</b></a>
+            </li>
           </ul>
         </Navbar>
 
@@ -132,6 +136,7 @@ const ProfilePage = () => {
         <button>Delete</button>
           </CardContainer>
         </div>
+        <footer className='home-footer'>MADE BY <img src="./public/mern&burn.svg" alt="dev" /> TEAM!</footer>
       </Container>
     </div>  
   );

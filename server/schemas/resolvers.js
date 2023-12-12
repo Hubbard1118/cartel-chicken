@@ -12,7 +12,7 @@ const resolvers = {
     elements: async() => {
       return Elements.find();
     },
-    element: async (parent, { name }) => {
+    element: async (parent, { name }, context) => {
       return Elements.findOne({ name });
     },
     compounds: async() => {

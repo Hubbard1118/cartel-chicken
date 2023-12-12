@@ -169,6 +169,15 @@ img {
 }
 /* home page end */
 
+/* profile page */
+.profile-wrapper {
+    background-image: url(../public/Home-BG.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;  
+}
+/* profile page end */
+
 /* notfound page */
 .notfound-wrapper {
     background-image: url(../public/Home-BG.webp);

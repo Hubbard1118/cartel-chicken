@@ -1,4 +1,10 @@
 
+.header {
+    color: blue;
+    width: 100vw;
+    justify-content: center;
+}
+
 /* * {
 } */
 
@@ -29,4 +35,5 @@
 
 .chicken-container {
     max-width: fit-content;
+
 }

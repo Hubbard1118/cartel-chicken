@@ -13,6 +13,7 @@ const Home = () => {
 
   return (
     <>
+    <div className='home-wrapper'>
         <nav className="navbar navbar-expand-lg ">
           <div className="container-fluid">
             <a className="navbar-brand" href="#"></a>
@@ -35,6 +36,7 @@ const Home = () => {
       </div>
 
       <PeriodicTable />
+    </div> 
     </> 
      
 

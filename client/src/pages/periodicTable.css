@@ -1,14 +1,26 @@
 .periodic-table-wrapper {
-    background-color: aqua;
+
+    background-color: plum;
     display: grid;
     grid-template-columns: repeat(18, auto);
     grid-template-rows: repeat(10, auto);
-    gap: 2px;
+    gap: 3px;
     padding: 20px;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin: 5px;
 }
 
 .buttons {
     font-family: "Poppins", "Georgia";
     color: silver;
     background-color: indigo;
+    border: 1px solid blue;
+    border-radius: 4px;
+}
+
+.buttons:hover{
+    border: 3px solid blue;
+    transition: .1s;
+    background-color: purple;
 }

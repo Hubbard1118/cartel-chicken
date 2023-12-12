@@ -4,7 +4,6 @@ import Auth from '../utils/auth';
 
 // Styled Components
 const Container = styled.div`
-  background-color: #43B3AE;
   min-height: 100vh;
 `;
 
@@ -103,35 +102,38 @@ const ProfilePage = () => {
 
 
   return (
-    <Container>
-      <Navbar>
-      <img src="./public/chem.svg" alt="Logo" />
-        <h1>Chem Chicken</h1>
-        <ul>
-          <li>
-            <button onClick={Auth.logout}>Logout</button>
-          </li>
-        </ul>
-      </Navbar>
+    <div className='profile-wrapper'>
+      <Container>
+        <Navbar className='navbar-container'>
+        <img src="./public/chem.svg" alt="Logo" />
+        <ProfileHeader className='profileHeader'>
+          <h1>{userName}'s Profile</h1>
+        </ProfileHeader>
+          {/* logout */}
+          <ul>
+            <li>
+              <button onClick={Auth.logout}>Logout</button>
+            </li>
+          </ul>
+        </Navbar>
 
-      <ProfileHeader>
-        <h1>{userName}'s Profile</h1>
-        
-      </ProfileHeader>
+        <div className='break'></div>
 
-      <MainContent>
-      <h2>Learn YOUR Compounds:</h2>
-      </MainContent>
-      
-      <CardContainer>
-      <CardTitle>Oxygen</CardTitle>
-      <CardText>Formula: </CardText>
-      <CardText>Molecular Weight: </CardText>
-     <CardImage src="https://www.newtondesk.com/wp-content/uploads/2019/04/oxygen-electron-configuration.png" alt={name} />
-     <button>Delete</button>
-      </CardContainer>
-      
-    </Container>
+        <div className='compound-container'>
+          <MainContent className='components-container'>
+          <h2>Learn YOUR Compounds:</h2>
+          </MainContent>
+          
+          <CardContainer>
+          <CardTitle>Oxygen</CardTitle>
+          <CardText>Formula: </CardText>
+          <CardText>Molecular Weight: </CardText>
+        <CardImage src="https://www.newtondesk.com/wp-content/uploads/2019/04/oxygen-electron-configuration.png" alt={name} />
+        <button>Delete</button>
+          </CardContainer>
+        </div>
+      </Container>
+    </div>  
   );
 };
 

@@ -49,13 +49,6 @@
 
 }
 
-.profile-wrapper {
-    background-image: url(https://cdn.discordapp.com/attachments/1182049276214399016/1183951705931522068/background_2.jpg?ex=658a33f3&is=6577bef3&hm=bbd072d2163d78ff9395027923d2b712aefb0c61e157205e9ead8b21a7a7a24d&);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-
 .notfound-wrapper {
     background-image: url(https://cdn.discordapp.com/attachments/1182049276214399016/1183951807303667713/background_4.webp?ex=658a340b&is=6577bf0b&hm=a6926e2a7e44b7f3c81d84d8f636fb697987bd69d28a0fcd7d182cee044ddd3b&);
     background-repeat: no-repeat;
@@ -84,13 +77,46 @@
     height: 100vh;
 }
 
-.components-container {
-    border: solid black;
-    background-color: aqua;
-    max-width: fit-content;
+.profile-wrapper {
+    background-image: url(https://cdn.discordapp.com/attachments/1182049276214399016/1183951705931522068/background_2.jpg?ex=658a33f3&is=6577bef3&hm=bbd072d2163d78ff9395027923d2b712aefb0c61e157205e9ead8b21a7a7a24d&);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+}
+
+.components-container {
+    border: solid var(--soft-blue);
+    background-color: var(--sky);
+    max-width: 100vw;
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: none;
+
 }
 
 .components-container h2 {
     color: black;
+}
+
+.compound-container {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.break {
+    height: 10px;
+    max-width: 100vw;
+}
+
+.profileHeader {
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.navbar-container {
+    max-width: 100vw;
 }

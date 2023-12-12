@@ -104,9 +104,12 @@ const ProfilePage = () => {
   return (
     <div className='profile-wrapper'>
       <Container>
-        <Navbar>
+        <Navbar className='navbar-container'>
         <img src="./public/chem.svg" alt="Logo" />
-          <h1>Chem Chicken</h1>
+        <ProfileHeader className='profileHeader'>
+          <h1>{userName}'s Profile</h1>
+        </ProfileHeader>
+          {/* logout */}
           <ul>
             <li>
               <button onClick={Auth.logout}>Logout</button>
@@ -114,23 +117,21 @@ const ProfilePage = () => {
           </ul>
         </Navbar>
 
-        <ProfileHeader>
-          <h1>{userName}'s Profile</h1>
-          
-        </ProfileHeader>
+        <div className='break'></div>
 
-        <MainContent className='components-container'>
-        <h2>Learn YOUR Compounds:</h2>
-        </MainContent>
-        
-        <CardContainer>
-        <CardTitle>Oxygen</CardTitle>
-        <CardText>Formula: </CardText>
-        <CardText>Molecular Weight: </CardText>
-      <CardImage src="https://www.newtondesk.com/wp-content/uploads/2019/04/oxygen-electron-configuration.png" alt={name} />
-      <button>Delete</button>
-        </CardContainer>
-        
+        <div className='compound-container'>
+          <MainContent className='components-container'>
+          <h2>Learn YOUR Compounds:</h2>
+          </MainContent>
+          
+          <CardContainer>
+          <CardTitle>Oxygen</CardTitle>
+          <CardText>Formula: </CardText>
+          <CardText>Molecular Weight: </CardText>
+        <CardImage src="https://www.newtondesk.com/wp-content/uploads/2019/04/oxygen-electron-configuration.png" alt={name} />
+        <button>Delete</button>
+          </CardContainer>
+        </div>
       </Container>
     </div>  
   );

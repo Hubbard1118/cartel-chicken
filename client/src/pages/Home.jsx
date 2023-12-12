@@ -51,12 +51,8 @@ const Home = () => {
         </nav>
 
 
-      <div className="title">Welcome to Chem Chicken!
-            <div className="row">
-              <div className="col">Column</div>
-              <div className="col col-6">Column</div>
-              <div className="col">Column</div>
-            </div>
+      <div className="header">
+        <h1>Welcome to Chem Chicken!</h1>
       </div>
 
       <PeriodicTable />

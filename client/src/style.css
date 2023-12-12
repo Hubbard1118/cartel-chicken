@@ -1,7 +1,7 @@
-.title {
+.header {
     color: blue;
     width: 100vw;
-    justify-self: center;
+    justify-content: center;
 }
 
 .col {

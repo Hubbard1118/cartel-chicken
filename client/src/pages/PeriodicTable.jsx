@@ -7,7 +7,7 @@ import { useState } from "react";
 const PeriodicTable = () => {
   const [elementData, setElementData]= useState('')
 
-  const { data } = useQuery(GET_ONE_ELEMENT, {
+  const  {data}  = useQuery(GET_ONE_ELEMENT, {
     variables: { name: elementData },
     pollInterval: 500
 });
@@ -17,6 +17,7 @@ const PeriodicTable = () => {
 
 
   return (
+    <>
     <div className="periodic-table-wrapper">
       {element_data.elements.map((element) => (
         <button
@@ -32,7 +33,17 @@ const PeriodicTable = () => {
         </button>
       ))}
     </div>
-  );
-};
+
+    <div className="card ">
+        <img></img>
+        <div className="card-body">
+            <h5 className="card-title"></h5>
+            <p className="card-text">Click below to save!</p>
+            <a href="/profile" className="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    </>
+  
+)};
 
 export default PeriodicTable;

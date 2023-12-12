@@ -2,13 +2,14 @@
 
     background-color: plum;
     display: grid;
+    height: 600px;
     grid-template-columns: repeat(18, auto);
     grid-template-rows: repeat(10, auto);
     gap: 3px;
-    padding: 20px;
+    padding: 25px;
     border: 2px solid black;
     border-radius: 3px;
-    margin: 5px;
+    margin: 30px;
 }
 
 .buttons {
@@ -23,4 +24,11 @@
     border: 3px solid blue;
     transition: .1s;
     background-color: purple;
+}
+
+@media and screen (max-width: 500px){
+    .periodic-table-wrapper{ 
+        overflow: hidden
+    }
+
 }

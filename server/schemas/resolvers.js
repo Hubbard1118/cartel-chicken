@@ -12,8 +12,8 @@ const resolvers = {
     elements: async() => {
       return Elements.find();
     },
-    element: async (parent, { symbol }) => {
-      return Elements.findOne({ symbol });
+    element: async (parent, { name }, context) => {
+      return Elements.findOne({ name });
     },
     compounds: async() => {
       

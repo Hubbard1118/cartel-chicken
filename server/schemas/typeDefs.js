@@ -31,12 +31,13 @@ type Compound {
 }
 
 type Query {
-  users: [User]
-  user(username: String!): User
+  users: [User]!
+  user(userId: ID!): User
   elements: [Element]
-  element(symbol: String!): Element
+  element(name: String!): Element
   compounds: [Compound]
   compound(name:String!): Compound
+  me: User
 }
 
 

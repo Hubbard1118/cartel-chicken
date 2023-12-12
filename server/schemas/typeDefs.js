@@ -34,7 +34,7 @@ type Query {
   users: [User]
   user(username: String!): User
   elements: [Element]
-  element(name: String!): Element
+  element(symbol: String!): Element
   compounds: [Compound]
   compound(name:String!): Compound
 }

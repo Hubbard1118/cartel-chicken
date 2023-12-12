@@ -2,7 +2,7 @@
 
     background-color: plum;
     display: grid;
-    height: 600px;
+    height: 500px;
     grid-template-columns: repeat(18, auto);
     grid-template-rows: repeat(10, auto);
     gap: 3px;
@@ -10,6 +10,7 @@
     border: 2px solid black;
     border-radius: 3px;
     margin: 30px;
+    width: ;
 }
 
 .buttons {

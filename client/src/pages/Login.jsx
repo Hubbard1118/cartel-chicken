@@ -76,7 +76,7 @@ const Login = (props) => {
                     type="submit"
                   >
                     Submit
-                  </button>
+                  </button><a class="btn btn-primary" href="/signup" role="button"><b>Signup</b></a>
                 </form>
               )}
 

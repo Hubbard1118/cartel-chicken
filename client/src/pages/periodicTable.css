@@ -10,7 +10,7 @@
     border: 2px solid black;
     border-radius: 3px;
     margin: 30px;
-    width: ;
+    /* width: ; */
 }
 
 .buttons {
@@ -27,9 +27,9 @@
     background-color: purple;
 }
 
-@media and screen (max-width: 500px){
+/* @media and screen (max-width: 500px){
     .periodic-table-wrapper{ 
         overflow: hidden
     }
 
-}
+} */

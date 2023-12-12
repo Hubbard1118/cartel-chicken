@@ -1,4 +1,10 @@
-
+:root {
+    --fruit-orange: #F95D18ff;
+    --red-orange: #F22926ff;
+    --sky: #0FADB5ff;
+    --soft-blue: #01809Eff;
+    --selective-yellow: #FEBB01ff;
+}
 /* * {
 } */
 
@@ -14,7 +20,7 @@
 .welcome-wrapper {
     justify-content: center;
     display: flex;
-    background-color: aquamarine;
+    background-color: #0FADB5ff;
     width: 100vw;
     height: 100vh;
 }
@@ -87,3 +93,74 @@
     max-width: 550px;
 }
 /* sigup page end */
+
+/* home page */
+.home-wrapper {
+    background-color: var(--sky);
+    width: 100vw;
+    height: 100vh;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar.navbar-expand-lg {
+    max-width: fit-content;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    border: solid black;
+    background-color: var(--selective-yellow);
+    border-radius: 50%;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeLink {
+    font-size: 2rem;
+    border: solid black;
+    background-color: var(--selective-yellow);
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileLink {
+    font-size: 2rem;
+    border: solid black;
+    background-color: var(--selective-yellow);
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    text-align: center;
+    max-width: fit-content;
+    font-size: 4rem;
+    color: black;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.col {
+    font-size: 20px;
+    color: black;
+}
+/* home page end */

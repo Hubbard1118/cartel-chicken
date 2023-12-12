@@ -1,4 +1,4 @@
-const { User, Elements } = require('../models');
+const { User, Elements, Compounds } = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
 
 const resolvers = {
@@ -16,12 +16,25 @@ const resolvers = {
       return Elements.findOne({ name });
     },
     compounds: async() => {
+      
       return Compounds.find();
     },
-    compound: async (parent, { name }) => {
-      return Compounds.findOne({ name });
+    compound: async (parent, { name}) => {
+
+      try{
+
+         const compoundData = await Compounds.findOne({ name });
+         if (!compoundData){
+          console.log('not found')
+         }
+         return compoundData
+      }
+      catch(err){
+          console.log(err)
+      }
     },
   },
+  
 
   Mutation: {
     addUser: async (parent, { username, email, password }) => {

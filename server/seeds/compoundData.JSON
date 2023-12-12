@@ -1,0 +1,153 @@
+[
+    {
+      "name": "Water",
+      "formula": "H2O",
+      "molecularWeight": 18.01528
+    },
+    {
+      "name": "Hydrogen Peroxide",
+      "formula": "H2O2",
+      "molecularWeight": 34.01474
+    },
+    {
+      "name": "Ammonia",
+      "formula": "NH3",
+      "molecularWeight": 17.03052
+    },
+    {
+      "name": "Methane",
+      "formula": "CH4",
+      "molecularWeight": 16.04246
+    },
+    {
+      "name": "Helium",
+      "formula": "He",
+      "molecularWeight": 4.002602
+    },
+    {
+      "name": "Lithium Hydride",
+      "formula": "LiH",
+      "molecularWeight": 7.95
+    },
+    {
+      "name": "Lithium Carbonate",
+      "formula": "Li2CO3",
+      "molecularWeight": 73.891
+    },
+    {
+      "name": "Lithium Hydroxide",
+      "formula": "LiOH",
+      "molecularWeight": 23.95
+    },
+    {
+      "name": "Beryllium Oxide",
+      "formula": "BeO",
+      "molecularWeight": 25.01
+    },
+    {
+      "name": "Beryllium Chloride",
+      "formula": "BeCl2",
+      "molecularWeight": 79.918
+    },
+    {
+      "name": "Boron Trifluoride",
+      "formula": "BF3",
+      "molecularWeight": 67.806
+    },
+    {
+      "name": "Borax",
+      "formula": "Na2B4O7·10H2O",
+      "molecularWeight": null  
+    },
+    {
+      "name": "Methane",
+      "formula": "CH4",
+      "molecularWeight": 16.04246
+    },
+    {
+      "name": "Carbon Dioxide",
+      "formula": "CO2",
+      "molecularWeight": 44.0095
+    },
+    {
+      "name": "Ethane",
+      "formula": "C2H6",
+      "molecularWeight": 30.070
+    },
+    {
+      "name": "Carbon Monoxide",
+      "formula": "CO",
+      "molecularWeight": 28.010
+    },
+    {
+      "name": "Ammonia",
+      "formula": "NH3",
+      "molecularWeight": 17.03052
+    },
+    {
+      "name": "Nitrogen Dioxide",
+      "formula": "NO2",
+      "molecularWeight": 46.0055
+    },
+    {
+      "name": "Nitric Acid",
+      "formula": "HNO3",
+      "molecularWeight": 63.01284
+    },
+    {
+      "name": "Water",
+      "formula": "H2O",
+      "molecularWeight": 18.01528
+    },
+    {
+      "name": "Carbon Dioxide",
+      "formula": "CO2",
+      "molecularWeight": 44.0095
+    },
+    {
+      "name": "Ozone",
+      "formula": "O3",
+      "molecularWeight": 47.9982
+    },
+    {
+      "name": "Hydrogen Fluoride",
+      "formula": "HF",
+      "molecularWeight": 20.006
+    },
+    {
+      "name": "Sodium Fluoride",
+      "formula": "NaF",
+      "molecularWeight": 41.98817
+    },
+    {
+      "name": "Neon",
+      "formula": "Ne",
+      "molecularWeight": 20.1797
+    },
+    {
+      "name": "Sodium Chloride",
+      "formula": "NaCl",
+      "molecularWeight": 58.44
+    },
+    {
+      "name": "Sodium Hydroxide",
+      "formula": "NaOH",
+      "molecularWeight": 39.997
+    },
+    {
+      "name": "Sodium Bicarbonate",
+      "formula": "NaHCO3",
+      "molecularWeight": 84.0066
+    },
+    {
+      "name": "Magnesium Oxide",
+      "formula": "MgO",
+      "molecularWeight": 40.3044
+    },
+    {
+      "name": "Magnesium Hydroxide",
+      "formula": "Mg(OH)2",
+      "molecularWeight": 58.3197
+    }
+  ]
+  

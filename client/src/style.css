@@ -1,3 +1,4 @@
+
 :root {
     --fruit-orange: #F95D18ff;
     --red-orange: #F22926ff;
@@ -5,6 +6,13 @@
     --soft-blue: #01809Eff;
     --selective-yellow: #FEBB01ff;
 }
+
+.header {
+    color: blue;
+    width: 100vw;
+    justify-content: center;
+}
+
 /* * {
 } */
 

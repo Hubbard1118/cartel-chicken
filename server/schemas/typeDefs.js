@@ -23,6 +23,7 @@ type Element {
   electronConfiguration: String
   electronegativity: Float
 }
+
 type Compound {
   name: String
   formula: String
@@ -38,27 +39,6 @@ type Query {
   compound(name:String!): Compound
 }
 
-query Query {
-  Element {
-    name
-    symbol
-    atomicNumber
-    atomicMass
-    category
-    group
-    period
-    block
-    electronConfiguration
-    electronegativity
-  }
-
-  Compound {
-    name
-    formula
-    molecularWeight
-  }
-  
-}
 
 type Mutation {
   addUser(username: String!, email: String!, password: String!): Auth

@@ -37,27 +37,60 @@
 
 .welcome-wrapper {
     display: flex;
-    background-image: url(https://cdn.discordapp.com/attachments/1182049276214399016/1183951705931522068/background_2.jpg?ex=658a33f3&is=6577bef3&hm=bbd072d2163d78ff9395027923d2b712aefb0c61e157205e9ead8b21a7a7a24d&);
-    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://natur.gl/wp-content/uploads/2022/01/Designed-by-Freepik-scaled.jpg);
     background-size: cover;
     height: 100vh;
-}
-
-.welcomeCard-wrapper {
-    display: flex;
-    align-items: center;
-    height: 700px;
+    padding: 10px;
 }
 
 .welcome {
+    display: flex;
     align-items: center;
-    width: 600px;
+    justify-content: center;
+    background-color: #F22926ff;
+    padding: 30px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    width: 750px;
     height: 50%;
     padding-bottom: 20px;
 }
 
+.w{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 50px;
+    background-color: #43B3AE;
+    border-radius: 20px;
+
+}
+.btn {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    border-radius: 20px;
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .chicken-container {
     max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
 
 }
 

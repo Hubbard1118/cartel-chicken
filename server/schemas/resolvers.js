@@ -6,8 +6,8 @@ const resolvers = {
     users: async () => {
       return User.find().populate('');
     },
-    user: async (parent, { username }) => {
-      return User.findOne({ username }).populate('');
+    user: async (parent, { userId}) => {
+      return User.findOne({ _id: userId }).populate('');
     },
     elements: async() => {
       return Elements.find();
@@ -32,6 +32,12 @@ const resolvers = {
       catch(err){
           console.log(err)
       }
+    },
+    me: async (parent, args, context) => {
+      if (context.user) {
+        return User.findOne({ _id: context.user._id });
+      }
+      throw AuthenticationError;
     },
   },
   

@@ -1,6 +1,5 @@
 import React from 'react';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
-import { Outlet } from 'react-router-dom';
 import './App.css';
 import './style.css';
 import { Outlet } from 'react-router-dom';

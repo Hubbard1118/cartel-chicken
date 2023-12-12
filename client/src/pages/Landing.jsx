@@ -1,13 +1,12 @@
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-
 const Landing = () => {
     return (
         <>
     <div className='welcome-wrapper'>
         <div className='chicken-container'>
-            <a href="/login"><img src="start-chicken.png" alt="Chem Chicken" /></a>
+            <img src="start-chicken.png" alt="Chem Chicken"></img>
         </div>
         <div className='welcomeCard-wrapper'>
             <Card className='welcome'>

@@ -39,7 +39,7 @@ const Signup = () => {
   };
 
   return (
-    <div className='login-wrapper'>
+    <div className='signup-wrapper'>
       <main id='login-wrap' className="d-flex align-items-center justify-content-center min-vh-100">
         <div className="col-12 col-lg-6">
           <div className="card">

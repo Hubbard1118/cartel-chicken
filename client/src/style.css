@@ -8,27 +8,37 @@
 /* * {
 } */
 
- .title {
+ /* .title {
     color: aliceblue;
 }
 
 .col {
     color: aliceblue;
-}
+} */
 
 /* landing page */
 .welcome-wrapper {
-    justify-content: center;
+    background-image: url(../public/Landing-BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
     display: flex;
-    background-color: #0FADB5ff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
 }
 
+.chicken-container img {
+    height: 300px;
+    width: 300px;
+}
+
 .welcomeCard-wrapper {
     display: flex;
-    align-items: center;
-    height: 700px;
+    align-items: flex-start;
+    height: 600px;
 }
 
 .welcome {
@@ -37,13 +47,16 @@
     height: 50%;
     padding-bottom: 20px;
 }
-
-.chicken-container {
-    max-width: fit-content;
-}
 /* landing page end */
 
 /* login page */
+.login-wrapper {
+    background-image: url(../public/Login-Signup-BG.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
 .formInputs {
     padding: 20px;
 } 
@@ -55,11 +68,6 @@
 #password {
     margin-top: 30px;
 }
-
-/* #login-wrap {
-    max-width: 800px;
-    max-height: 1000px;
-} */
 
 .loginPage-buttons {
     max-height: 100px;
@@ -78,6 +86,13 @@
 /* login page end */
 
 /* signup page */
+.signup-wrapper {
+    background-image: url(../public/Login-Signup-BG.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
 .signupPage-buttons {
     max-height: 100px;
     display: flex;
@@ -96,12 +111,14 @@
 
 /* home page */
 .home-wrapper {
-    background-color: var(--sky);
-    width: 100vw;
+    background-image: url(../public/Home-BG.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
 }
 
 .top-container {
+    background-color: var(--soft-blue);
     display: flex;
     justify-content: space-around;
 }
@@ -111,42 +128,25 @@
 }
 
 .navbar-brand {
-    font-size: 2rem;
+    font-size: 1rem;
     border: solid black;
     background-color: var(--selective-yellow);
-    border-radius: 50%;
-    width: 150px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .homeLink {
-    font-size: 2rem;
+    font-size: 1rem;
     border: solid black;
     background-color: var(--selective-yellow);
-    border-radius: 50%;
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .profileLink {
-    font-size: 2rem;
+    font-size: 1rem;
     border: solid black;
     background-color: var(--selective-yellow);
-    border-radius: 50%;
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .title {
+    font-family: 'Ubuntu', sans-serif;
     display: flex;
     text-align: center;
     max-width: fit-content;
@@ -159,8 +159,24 @@ img {
     height: 100px;
 }
 
+.periodic-table-wrapper {
+    background-color: var(--soft-blue);
+}
+
 .col {
     font-size: 20px;
     color: black;
 }
 /* home page end */
+
+/* notfound page */
+.notfound-wrapper {
+    background-image: url(../public/Home-BG.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+/* notfound page end */

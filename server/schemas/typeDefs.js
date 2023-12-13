@@ -22,6 +22,7 @@ type Element {
   block: String
   electronConfiguration: String
   electronegativity: Float
+  image: String
 }
 
 type Compound {

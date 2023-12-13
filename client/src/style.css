@@ -162,9 +162,7 @@
 }
 
 .profile-wrapper {
-    background-image: url(https://cdn.discordapp.com/attachments/1182049276214399016/1183951705931522068/background_2.jpg?ex=658a33f3&is=6577bef3&hm=bbd072d2163d78ff9395027923d2b712aefb0c61e157205e9ead8b21a7a7a24d&);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(https://media.istockphoto.com/id/1281028890/vector/molecule-background-abstract-science-seamless-pattern-medical-chemistry-wallpaper-with-atom.jpg?s=612x612&w=0&k=20&c=gSr0S_kh_3OJF-nGnNhlUCaYbgRMiTTSYPkqgV3bO2o=);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -172,11 +170,11 @@
 
 .components-container {
     border: solid var(--soft-blue);
-    background-color: var(--sky);
+    background-color: #43B3AE;
     max-width: 100vw;
     max-height: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     padding: none;
 
 }
@@ -199,6 +197,10 @@
 .profileHeader {
     padding-bottom: 20px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
 }
 
 .navbar-container {

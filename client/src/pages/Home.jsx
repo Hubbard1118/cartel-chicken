@@ -62,11 +62,11 @@ const Home = () => {
         {/* logout */}
         <ul>
           <li>
-          <Link to="/signup">
-        <button>Sign-up</button>
-      </Link>
-      <Link to="/profile">
+          <Link to="/profile">
         <button>Profile</button>
+      </Link>
+          <Link>
+        <button onClick={Auth.logout}>LogOut</button>
       </Link>
           </li>
         </ul>

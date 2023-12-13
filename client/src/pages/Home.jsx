@@ -4,8 +4,39 @@ import { Link } from 'react-router-dom';
 import PeriodicTable from './PeriodicTable';
 import '../style.css'
 import Auth from '../utils/auth';
+import styled from 'styled-components';
 
-
+const Navbar = styled.nav`
+  background-color: #F95D18ff;
+  padding: 10px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    color: white;
+    align-self: center;
+    font-weight: bold;
+    margin-left: 10%;
+  }
+  ul {
+    list-style: none;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: flex-end;
+    li {
+      margin-left: 10px;
+      button {
+        background-color: #FEBB01ff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 10px;
+        margin-left: 10px;
+      }
+    }
+  }
+`;
 const Home = () => {
   // const { loading, data } = useQuery(ELEMENT_QUERY, {
   //   fetchPolicy: "no-cache"
@@ -14,29 +45,23 @@ const Home = () => {
   return (
     <>
     <div className='home-wrapper'>
-        <nav className="navbar navbar-expand-lg ">
-          <div className="container-fluid">
-          <button 
-            id='home-logout-btn'
-            className="btn btn-outline-warning"
-            onClick={Auth.logout}
-          >
-            <b>Logout</b>
-          </button>
-            <a className="navbar-brand" href="#"></a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            </div>
-            <div className="header">
-            <h1><b>Chem Chicken</b></h1>
-            </div>
-            <a id='home-profile-btn' class="btn btn-primary" href="/profile" role="button"><b>Profile</b></a>
-          </div>
-        </nav>
+    <Navbar className='navbar-container'>
+        <img src="./public/chem.svg" alt="Logo" />
+        <h1>Chem Chicken</h1>
+        {/* logout */}
+        <ul>
+          <li>
+          <Link to="/signup">
+        <button>Sign-up</button>
+      </Link>
+      <Link to="/profile">
+        <button>Profile</button>
+      </Link>
+          </li>
+        </ul>
+      </Navbar>
       <PeriodicTable />
-      <footer className='home-footer'>Made by <img src="./public/mern&burn.svg" alt="dev" /> team!</footer>
+      <footer className='home-footer'>Made by <img src="./public/mern&burn.svg" alt="dev" /></footer>
     </div> 
     </> 
      

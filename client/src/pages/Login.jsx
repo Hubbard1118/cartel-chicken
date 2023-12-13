@@ -30,6 +30,7 @@ const Card = styled.div`
 
 const CardHeader = styled.h4`
   background-color: #F95D18ff;
+  text-align: center;
   color: #fff;
   padding: 12px;
   margin: 0;
@@ -135,7 +136,7 @@ const Login = (props) => {
         <ul>
           <li>
           <Link to="/signup">
-        <button>SignUp</button>
+        <button>Sign-up</button>
       </Link>
           </li>
         </ul>
@@ -167,6 +168,8 @@ const Login = (props) => {
                     onChange={handleChange}
                   />
                   <button type="submit">Submit</button>
+                  <button  className="mt-2" type="submit"><a style={{color: 'white'}}href='/Signup'>Sign-up</a></button>
+                  
                 </form>
               )}
 

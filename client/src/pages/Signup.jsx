@@ -160,6 +160,7 @@ const Signup = () => {
           <Card>
             <CardHeader>Sign Up</CardHeader>
             <CardBody>
+
               {data ? (
                 <p>
                   Success! You may now head{' '}

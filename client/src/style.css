@@ -90,8 +90,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 0px;
+}
 
+.chicken-container img {
+    height: 400px;
 }
 
 .notfound-wrapper {
@@ -152,6 +155,10 @@
     cursor: pointer;
     font-weight: bold;
     border-radius: 10px;
+    font-size: 16px;
+    margin: 0px;
+    width: 93.56px;
+    height: 38.4px;
 }
 
 .profile-wrapper {
@@ -175,7 +182,7 @@
 }
 
 .components-container h2 {
-    color: black;
+    color: white;
 }
 
 .compound-container {

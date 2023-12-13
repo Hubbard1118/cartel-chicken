@@ -112,7 +112,7 @@ const ProfilePage = () => {
           {/* logout */}
           <ul>
             <li>
-              <button onClick={Auth.logout}>Logout</button>
+              <button onClick={Auth.logout}><b>Logout</b></button>
             </li>
           <br />
             <li>

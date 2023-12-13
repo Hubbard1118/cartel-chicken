@@ -37,6 +37,17 @@ const Navbar = styled.nav`
     }
   }
 `;
+
+const StyledH1 = styled.h1`
+  color: ;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 4%;
+`;
+
+
 const Home = () => {
   // const { loading, data } = useQuery(ELEMENT_QUERY, {
   //   fetchPolicy: "no-cache"
@@ -60,6 +71,7 @@ const Home = () => {
           </li>
         </ul>
       </Navbar>
+      <StyledH1>The Periodic Table of Elements</StyledH1>
       <PeriodicTable />
       <footer className='home-footer'>Made by <img src="./public/mern&burn.svg" alt="dev" /> team!</footer>
     </div> 

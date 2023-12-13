@@ -107,14 +107,16 @@
     background-size: cover;
     height: 100vh;
 }
-.card-header{
+.card-header {
     text-align: center;
+    background-color: #F95D18ff;
 }
-
+/* .card-body{
+} */
 .home-wrapper {
     background-image: url(https://img.freepik.com/free-vector/hand-drawn-colorful-science-education-background_23-2148489182.jpg?w=2000);
     background-size: cover;
-    height: 100%;
+    height: 100vh;
 }
 .navbar.navbar-expand-lg {
     background-color: #F95D18ff;

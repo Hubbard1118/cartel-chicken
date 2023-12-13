@@ -63,7 +63,7 @@ const Home = () => {
         <ul>
           <li>
           <Link to="/signup">
-        <button>SignUp</button>
+        <button>Sign-up</button>
       </Link>
       <Link to="/profile">
         <button>Profile</button>
@@ -73,7 +73,7 @@ const Home = () => {
       </Navbar>
       <StyledH1>The Periodic Table of Elements</StyledH1>
       <PeriodicTable />
-      <footer className='home-footer'>Made by <img src="./public/mern&burn.svg" alt="dev" /> team!</footer>
+      <footer className='home-footer'>Made by <img src="./public/mern&burn.svg" alt="dev" /></footer>
     </div> 
     </> 
      

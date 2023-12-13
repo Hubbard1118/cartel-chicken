@@ -37,6 +37,11 @@
     background-color: #FEBB01ff;
 }
 
+#save{
+    width: fit-content;
+    text-wrap: wrap;
+    height: fit-content;
+}
 /* @media and screen (max-width: 500px){
     .periodic-table-wrapper{ 
         overflow: hidden

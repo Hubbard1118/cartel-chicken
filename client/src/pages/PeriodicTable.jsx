@@ -51,7 +51,7 @@ const PeriodicTable = () => {
                 <p className="card-text">Block: {data.element.block}</p>
                 <p className="card-text">Electronegativity: {data.element.electronegativity}</p>
                 <p className="card-text">Electron Configuration: {data.element.electronConfiguration}</p>
-                <a href="/profile" className="btn btn-primary">Save Element!</a>
+                <a href="/profile" className="btn btn-primary" id="save">Save Element!</a>
             </div>
         </div>   
         )}

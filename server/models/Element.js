@@ -42,6 +42,10 @@ const ElementSchema = new mongoose.Schema({
   electronegativity: {
     type: String,
     default: null 
+  },
+  image: {
+    type: String,
+    default: null
   }
 });
 

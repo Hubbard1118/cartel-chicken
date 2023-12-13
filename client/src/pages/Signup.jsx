@@ -41,7 +41,7 @@ const Signup = () => {
   return (
     <div className='signup-wrapper'>
       <main className="flex-row justify-center mb-4">
-        <div className="col-12 col-lg-10">
+        <div >
           <div className="card">
             <h4 className="card-header bg-dark text-light p-2">Sign Up</h4>
             <div className="card-body">
@@ -77,7 +77,7 @@ const Signup = () => {
                     onChange={handleChange}
                   />
                   <button
-                    className="btn btn-block btn-primary"
+                    className="btn btn-primary"
                     style={{ cursor: 'pointer' }}
                     type="submit"
                   >

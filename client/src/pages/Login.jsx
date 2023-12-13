@@ -30,6 +30,7 @@ const Card = styled.div`
 
 const CardHeader = styled.h4`
   background-color: #F95D18ff;
+  text-align: center;
   color: #fff;
   padding: 12px;
   margin: 0;

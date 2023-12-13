@@ -107,7 +107,9 @@
     background-size: cover;
     height: 100vh;
 }
-
+.card-header{
+    text-align: center;
+}
 
 .home-wrapper {
     background-image: url(https://img.freepik.com/free-vector/hand-drawn-colorful-science-education-background_23-2148489182.jpg?w=2000);

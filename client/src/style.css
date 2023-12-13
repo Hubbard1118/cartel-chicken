@@ -116,25 +116,24 @@
 }
 
 .home-wrapper {
-    background-image: url(https://cdn.discordapp.com/attachments/1182049276214399016/1183951807303667713/background_4.webp?ex=658a340b&is=6577bf0b&hm=a6926e2a7e44b7f3c81d84d8f636fb697987bd69d28a0fcd7d182cee044ddd3b&);
-    background-repeat: no-repeat;
+    background-image: url(https://img.freepik.com/free-vector/hand-drawn-colorful-science-education-background_23-2148489182.jpg?w=2000);
     background-size: cover;
     height: 100vh;
 }
 .navbar.navbar-expand-lg {
-    background-color: var(--soft-yellow);
+    background-color: #F95D18ff;
 }
 
 /* .header h1 {
 } */
 
 #home-logout-btn {
-    background-color: var(--red-orange);
+    background-color: #FEBB01ff;
     color: black;
 }
 
 #home-profile-btn {
-    background-color: var(--fruit-orange);
+    background-color: #43B3AE;
     color: black;
 }
 

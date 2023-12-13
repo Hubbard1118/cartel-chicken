@@ -42,11 +42,16 @@ const PeriodicTable = () => {
         <div className="card " style={{
             'width': '30%'}}>
             <div className="card-body">
-                <h5 className="card-title">{data.element.name} - {data.element.symbol}</h5>
-                <p className="card-text">Number: {data.element.atomicNumber}</p>
-                <p className="card-text">Mass: {data.element.atomicNumber}</p>
-                <p className="card-text">{data.element.atomicNumber}</p>
-                <a href="/profile" className="btn btn-primary">Add to your saved Elements!</a>
+                <h4 className="card-title">{data.element.name} - {data.element.symbol}</h4>
+                <p className="card-text">Atomic Number: {data.element.atomicNumber}</p>
+                <p className="card-text">Atomic Mass: {data.element.atomicMass}</p>
+                <p className="card-text">Category: {data.element.category}</p>
+                <p className="card-text">Group: {data.element.group}</p>
+                <p className="card-text">Period: {data.element.period}</p>
+                <p className="card-text">Block: {data.element.block}</p>
+                <p className="card-text">Electronegativity: {data.element.electronegativity}</p>
+                <p className="card-text">Electron Configuration: {data.element.electronConfiguration}</p>
+                <a href="/profile" className="btn btn-primary">Save Element!</a>
             </div>
         </div>   
         )}

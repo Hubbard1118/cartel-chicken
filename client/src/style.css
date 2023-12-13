@@ -102,23 +102,19 @@
 }
 
 .signup-wrapper {
-    background-image: url(https://cdn.discordapp.com/attachments/1182049276214399016/1183951728303939674/background_3.webp?ex=658a33f8&is=6577bef8&hm=edb8c69c657c0bbc72b1c1d6f886484209b988256bd563b91a5694c31bdd9c3c&);
+    background-image: url(https://static.vecteezy.com/system/resources/previews/006/180/750/original/chemistry-symbols-icon-set-science-subject-doodle-design-education-and-study-concept-back-to-school-sketchy-background-for-notebook-not-pad-sketchbook-vector.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
-
-.login-wrapper {
-    background-image: url(https://cdn.discordapp.com/attachments/1182049276214399016/1183951728303939674/background_3.webp?ex=658a33f8&is=6577bef8&hm=edb8c69c657c0bbc72b1c1d6f886484209b988256bd563b91a5694c31bdd9c3c&);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+.card-header{
+    text-align: center;
 }
 
 .home-wrapper {
     background-image: url(https://img.freepik.com/free-vector/hand-drawn-colorful-science-education-background_23-2148489182.jpg?w=2000);
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
 .navbar.navbar-expand-lg {
     background-color: #F95D18ff;
@@ -198,4 +194,9 @@
 
 .navbar-container {
     max-width: 100vw;
+}
+
+.card {
+    background-color: aquamarine;
+    left: 45%;
 }

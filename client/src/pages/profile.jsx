@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Auth from '../utils/auth';
+import { Link } from 'react-router-dom';
 
 // Styled Components
 const Container = styled.div`
@@ -116,7 +117,9 @@ const ProfilePage = () => {
             </li>
           <br />
             <li>
-              <a id='profile-home-btn' class="btn btn-primary" href="/home" role="button"><b>Home</b></a>
+            <Link to="/home">
+                <button><b>Home</b></button>
+            </Link>
             </li>
           </ul>
         </Navbar>

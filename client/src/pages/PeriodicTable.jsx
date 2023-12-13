@@ -40,9 +40,9 @@ const PeriodicTable = () => {
 
         {data && (
         <div className="card " style={{
-            'width': '30%'}}>
+            'width': '20%'}}>
             <div className="card-body">
-                <h4 className="card-title">{data.element.name} - {data.element.symbol}</h4>
+                <h4 className="card-title">{data.element.symbol} - {data.element.name} </h4>
                 <p className="card-text">Atomic Number: {data.element.atomicNumber}</p>
                 <p className="card-text">Atomic Mass: {data.element.atomicMass}</p>
                 <p className="card-text">Category: {data.element.category}</p>

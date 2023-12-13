@@ -146,7 +146,9 @@ const Signup = () => {
     <>
       <Navbar className='navbar-container'>
           <img src="./public/chem.svg" alt="Logo" />
-          <h1>Chem Chicken</h1>
+          <div className='signupTitle-container'>
+            <h1>Chem Chicken</h1>
+        </div>
           <ul>
             <li>
             <Link to="/login">

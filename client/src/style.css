@@ -116,7 +116,7 @@
 .home-wrapper {
     background-image: url(https://img.freepik.com/free-vector/hand-drawn-colorful-science-education-background_23-2148489182.jpg?w=2000);
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
 }
 .navbar.navbar-expand-lg {
     background-color: #F95D18ff;
@@ -199,6 +199,11 @@
 }
 
 .card {
-    background-color: aquamarine;
-    left: 45%;
+    background-color: #F95D18ff;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 5%;
+    font-weight: bold;
+    margin-left: 40%;
 }

@@ -25,16 +25,17 @@
 }
 
 .buttons {
+    box-sizing: border-box;
     font-family: "Poppins", "Georgia";
     color: silver;
     background-color: var(--gray-blue);
-    border: 1px solid blue;
+    border: 3px solid blue;
+    transition: ease-in-out .2s;
     border-radius: 4px;
 }
 
 .buttons:hover{
     border: 3px solid blue;
-    transition: .1s;
     background-color: purple;
 }
 

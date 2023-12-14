@@ -45,8 +45,24 @@ const ElementSchema = new mongoose.Schema({
   },
   image: {
     type: String,
-    default: null 
-  }
+    default: null
+  },
+  compounds: [
+    {
+      name: {
+        type: String,
+        required: true
+      },
+      formula: {
+        type: String,
+        required: true,
+      },  
+      molecularWeight: {
+        type: String,
+        required: true
+      }
+    }
+  ]
 });
 
 // Create a model from the schema

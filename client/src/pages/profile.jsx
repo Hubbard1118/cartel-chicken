@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Auth from '../utils/auth';
+import { Link } from 'react-router-dom';
 
 // Styled Components
 const Container = styled.div`
@@ -23,6 +24,10 @@ const Navbar = styled.nav`
     padding: 20px 20px;
     display: flex;
     justify-content: flex-end;
+    @media screen and (max-width: 624px) {
+      flex-wrap: wrap;
+      padding-top: 0px;
+    }
     li {
       margin-left: 10px;
       button {
@@ -45,6 +50,12 @@ const ProfileHeader = styled.header`
     font-size: 3rem;
     color: white;
     font-weight: bold;
+    @media screen and (max-width: 898.4px) {
+      font-size: 30px;
+    }
+    @media screen and (max-width: 530px) {
+      font-size: 20px;
+    }
   }
 `;
 
@@ -69,6 +80,9 @@ const CardContainer = styled.div`
   background-color: #F95D18ff;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 700px) {
+    flex-wrap: wrap;  
+  }
    button {
     background-color: #FEBB01ff;
     border: none;
@@ -98,25 +112,27 @@ const CardImage = styled.img`
 
 // ProfilePage Component
 const ProfilePage = () => {
-  const userName = "Test User";
+  const userName = "My";
 
 
   return (
     <div className='profile-wrapper'>
       <Container>
         <Navbar className='navbar-container'>
-        <img src="./public/chem.svg" alt="Logo" />
+        <img src="./public/chem.svg" alt="Logo"/>
         <ProfileHeader className='profileHeader'>
           <h1>{userName}'s Profile</h1>
         </ProfileHeader>
           {/* logout */}
           <ul>
             <li>
-              <button onClick={Auth.logout}>Logout</button>
+              <button onClick={Auth.logout}><b>Logout</b></button>
             </li>
           <br />
             <li>
-              <a id='profile-home-btn' class="btn btn-primary" href="/home" role="button"><b>Home</b></a>
+            <Link to="/home">
+                <button><b>Home</b></button>
+            </Link>
             </li>
           </ul>
         </Navbar>

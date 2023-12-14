@@ -11,7 +11,7 @@
 
 .periodic-table-wrapper {
 
-    background-color: var(--sky);
+    background-color: #F95D18ff;
     display: grid;
     height: 500px;
     grid-template-columns: repeat(18, auto);
@@ -19,8 +19,11 @@
     gap: 3px;
     padding: 25px;
     border: 2px solid black;
-    border-radius: 3px;
+    border-radius: 10px;
     margin: 30px;
+    @media screen and (max-width: 830px){
+    overflow-x: scroll;
+    }
     /* width: ; */
 }
 
@@ -31,17 +34,19 @@
     background-color: var(--gray-blue);
     border: 3px solid blue;
     transition: ease-in-out .2s;
+
     border-radius: 4px;
+    resize: both;
 }
 
 .buttons:hover{
     border: 3px solid blue;
     background-color: purple;
+
 }
 
-/* @media and screen (max-width: 500px){
-    .periodic-table-wrapper{ 
-        overflow: hidden
-    }
-
-} */
+#save{
+    width: fit-content;
+    text-wrap: wrap;
+    height: fit-content;
+}

@@ -17,12 +17,21 @@ const Navbar = styled.nav`
     align-self: center;
     font-weight: bold;
     margin-left: 10%;
+    @media (max-width: 684px) {
+      font-size: 30px;
+    }
+    @media (max-width: 641.6px) {
+      font-size: 25px;
+    }
   }
   ul {
     list-style: none;
     padding: 20px 20px;
     display: flex;
     justify-content: flex-end;
+    @media (max-width: 641.6px) {
+      padding-top: 0px;
+    }
     li {
       margin-left: 10px;
       button {
@@ -37,6 +46,17 @@ const Navbar = styled.nav`
     }
   }
 `;
+
+const StyledH1 = styled.h1`
+  color: ;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 4%;
+`;
+
+
 const Home = () => {
   // const { loading, data } = useQuery(ELEMENT_QUERY, {
   //   fetchPolicy: "no-cache"
@@ -51,15 +71,16 @@ const Home = () => {
         {/* logout */}
         <ul>
           <li>
-          <Link to="/signup">
-        <button>Sign-up</button>
-      </Link>
-      <Link to="/profile">
+          <Link to="/profile">
         <button>Profile</button>
+      </Link>
+          <Link>
+        <button onClick={Auth.logout}>LogOut</button>
       </Link>
           </li>
         </ul>
       </Navbar>
+      <StyledH1>The Periodic Table of Elements</StyledH1>
       <PeriodicTable />
       <footer className='home-footer'>Made by <img src="./public/mern&burn.svg" alt="dev" /></footer>
     </div> 

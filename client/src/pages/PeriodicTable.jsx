@@ -1,15 +1,23 @@
 import "./periodicTable.css";
 import element_data from "../PeriodicTableJSON.json";
 import { useLazyQuery } from "@apollo/client";
+import { useState, useEffect } from 'react';
 import { GET_ONE_ELEMENT } from "../utils/queries";
 import { ADD_ELEMENT } from "../utils/mutations";
-import { useState } from "react";
-import Card from "./Card";
+import { saveElementIds, getSavedElementsIds } from '../utils/localStorage';
+import { useMutation } from '@apollo/client';
+import Auth from '../utils/auth';
 
 const PeriodicTable = () => {
-  const  [element, {loading: dataLoading, error, data}]  = useLazyQuery(GET_ONE_ELEMENT);
+  const [element, {loading: dataLoading, error, data}]  = useLazyQuery(GET_ONE_ELEMENT);
   const [selectedElement, setSelectedElement] = useState('');
-  
+  const [savedElementsIds, setSavedElementIds] = useState(getSavedElementsIds());
+  const [savedElement] = useMutation(ADD_ELEMENT);
+
+  useEffect(() => {
+    return () => saveElementIds(savedElementsIds);
+  });
+
   const handleButtonClick = async (elementName) => {
       console.log(elementName);
        await element({
@@ -19,13 +27,34 @@ const PeriodicTable = () => {
         });
         setSelectedElement(elementName);
     };
+
+    const handleSaveElement = async (elementId) => {
+
+        const elementToSave = savedElement.find((element) => element.elementId === elementId);
+        // get token
+        const token = Auth.loggedIn() ? Auth.getToken() : null;
+    
+        if (!token) {
+          return false;
+        }
+    
+        try {
+          const { data } = await savedElement({
+            variables: { $elementData : { ...elementToSave }},
+          });
+    
+          
+          console.log(data.savedElement);
+    
+          // if book successfully saves to user's account, save book id to state
+          setSavedElementIds([...savedElementsIds, elementToSave.elementId]);
+          
+          console.log(savedElementsIds);
+        } catch (err) {
+          console.error(err);
+        }
+      };
     if (dataLoading) return <p>Loading...</p>;
-
-    const handleSavedBooks = async (elementName) => {
-        await savedElements ()
-
-        
-    }
 
   return (
     <>
@@ -47,9 +76,9 @@ const PeriodicTable = () => {
 
         {data && (
         <div className="card " style={{
-            'width': '30%'}}>
+            'width': '20%'}}>
             <div className="card-body">
-                <h4 className="card-title">{data.element.name} - {data.element.symbol}</h4>
+                <h4 className="card-title">{data.element.symbol} - {data.element.name} </h4>
                 <p className="card-text">Atomic Number: {data.element.atomicNumber}</p>
                 <p className="card-text">Atomic Mass: {data.element.atomicMass}</p>
                 <p className="card-text">Category: {data.element.category}</p>
@@ -58,7 +87,7 @@ const PeriodicTable = () => {
                 <p className="card-text">Block: {data.element.block}</p>
                 <p className="card-text">Electronegativity: {data.element.electronegativity}</p>
                 <p className="card-text">Electron Configuration: {data.element.electronConfiguration}</p>
-                <a href="/profile" className="btn btn-primary">Save Element!</a>
+                <a onClick={() => handleSaveElement(element.elementId)} className="btn btn-primary" id="save">Save Element!</a>
             </div>
         </div>   
         )}

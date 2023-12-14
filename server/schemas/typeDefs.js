@@ -13,6 +13,7 @@ type Auth {
 }
 
 type Element {
+  elementId: ID!
   name: String
   symbol: String
   atomicNumber: Float
@@ -24,7 +25,9 @@ type Element {
   electronConfiguration: String
   electronegativity: Float
   image: String
+  compounds: [Compound]
 }
+
 input ElementInput {
   elementId: ID!
   name: String

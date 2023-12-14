@@ -107,12 +107,12 @@ const Wrapper = styled.div`
 // ProfilePage Component
 const ProfilePage = () => {
   const [elements, setElements] = useState([]);
-  const [{user},  loading, error, data ] = useQuery(GET_ELEMENTS_BY_USER);
+  const   {loading, error, data} = useQuery(GET_ELEMENTS_BY_USER);
   const [removeElement] = useMutation(REMOVE_ELEMENT);
 
   const handleRemoveElement = async () => {
     //Get Elements
-      console.log(user);
+
 
       const elementToSave = {
         _id: data.element._id,

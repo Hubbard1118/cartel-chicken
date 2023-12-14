@@ -38,6 +38,7 @@ input ElementInput {
   electronConfiguration: String
   electronegativity: Float
   image: String
+  compounds: [Compound]
 }
 
 type Compound {

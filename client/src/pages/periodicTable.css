@@ -11,7 +11,7 @@
 
 .periodic-table-wrapper {
 
-    background-color: var(--sky);
+    background-color: #F95D18ff;
     display: grid;
     height: 500px;
     grid-template-columns: repeat(18, auto);
@@ -19,28 +19,30 @@
     gap: 3px;
     padding: 25px;
     border: 2px solid black;
-    border-radius: 3px;
+    border-radius: 10px;
     margin: 30px;
+    @media screen and (max-width: 830px){
+    overflow-x: scroll;
+    }
     /* width: ; */
 }
 
 .buttons {
-    font-family: "Poppins", "Georgia";
-    color: silver;
-    background-color: var(--gray-blue);
-    border: 1px solid blue;
+    font-family: "Poppins", "Georgia"; ;
+    background-color: #43B3AE;
+    border: 1px solid black;
     border-radius: 4px;
+    resize: both;
 }
 
 .buttons:hover{
-    border: 3px solid blue;
+    border: 3px solid ;
     transition: .1s;
-    background-color: purple;
+    background-color: #FEBB01ff;
 }
 
-/* @media and screen (max-width: 500px){
-    .periodic-table-wrapper{ 
-        overflow: hidden
-    }
-
-} */
+#save{
+    width: fit-content;
+    text-wrap: wrap;
+    height: fit-content;
+}

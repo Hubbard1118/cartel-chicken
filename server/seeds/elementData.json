@@ -9,8 +9,40 @@
     "period": 2,
     "block": "p",
     "electronConfiguration": "[He] 2s2 2p2",
-    "electronegativity": 2.55
-
+    "electronegativity": 2.55,
+    "image": "https://www.thoughtco.com/thmb/7dqyPF4xi_pTrOV-S43Xh4VxEro=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/diamond-and-piece-of-coal-sb10065243e-001-5b9276394cedfd0025a1b024.jpg",
+    "compounds": [
+      {
+        "name": "Methane",
+        "formula": "CH4",
+        "molecularWeight": 16.04246
+      },
+      {
+        "name": "Carbon Dioxide",
+        "formula": "CO2",
+        "molecularWeight": 44.0095
+      },
+      {
+        "name": "Carbon Monoxide",
+        "formula": "CO",
+        "molecularWeight": 28.0101
+      },
+      {
+        "name": "Carbon Tetrachloride",
+        "formula": "CCl4",
+        "molecularWeight": 153.823
+      },
+      {
+        "name": "Carbon Disulfide",
+        "formula": "CS2",
+        "molecularWeight": 76.139
+      },
+      {
+        "name": "Ethane",
+        "formula": "C2H6",
+        "molecularWeight": 30.070
+      }
+    ]
   },
   {
     "name": "Hydrogen",
@@ -22,7 +54,40 @@
     "period": 1,
     "block": "s-block",
     "electronConfiguration": "1s1",
-    "electronegativity": 2.20
+    "electronegativity": 2.20,
+    "image": "https://breakthroughenergy.org/wp-content/uploads/2023/03/why-we-need-hydrogen-hero.jpg",
+    "compounds": [
+      {
+        "name": "Water",
+        "formula": "H2O",
+        "molecularWeight": 18.01528
+      },
+      {
+        "name": "Hydrogen Peroxide",
+        "formula": "H2O2",
+        "molecularWeight": 34.01474
+      },
+      {
+        "name": "Ammonia",
+        "formula": "NH3",
+        "molecularWeight": 17.03052
+      },
+      {
+        "name": "Methane",
+        "formula": "CH4",
+        "molecularWeight": 16.04246
+      },
+      {
+        "name": "Hydrogen Fluoride",
+        "formula": "HF",
+        "molecularWeight": 20.006
+      },
+      {
+        "name": "Lithium Hydride",
+        "formula": "LiH",
+        "molecularWeight": 7.95
+      }
+    ]
   },
   {
     "name": "Oxygen",
@@ -34,7 +99,35 @@
     "period": 2,
     "block": "p",
     "electronConfiguration": "[He] 2s2 2p4",
-    "electronegativity": 3.44
+    "electronegativity": 3.44,
+    "image": "https://t3.ftcdn.net/jpg/01/45/43/40/360_F_145434085_QCWJ7icTw5y9tB53El5xUypNxpJIiGyy.jpg",
+    "compounds": [
+      {
+        "name": "Carbon Monoxide",
+        "formula": "CO",
+        "molecularWeight": 28.010
+      },
+      {
+        "name": "Carbon Dioxide",
+        "formula": "CO2",
+        "molecularWeight": 44.009
+      },
+      {
+        "name": "Water",
+        "formula": "H2O",
+        "molecularWeight": 18.015
+      },
+      {
+        "name": "Hydrogen Peroxide",
+        "formula": "H2O2",
+        "molecularWeight": 34.014
+      },
+      {
+        "name": "Ozone",
+        "formula": "O3",
+        "molecularWeight": 47.9982
+      }
+    ]
   },
   {
     "name": "Nitrogen",
@@ -46,7 +139,35 @@
     "period": 2,
     "block": "p",
     "electronConfiguration": "[He] 2s2 2p3",
-    "electronegativity": 3.04
+    "electronegativity": 3.04,
+    "image": "https://caloxinc.com/wp-content/uploads/2021/11/blog-liquid-nitrogen-beaker-1080x675.jpg",
+    "compounds": [
+      {
+        "name": "Nitrogen Dioxide",
+        "formula": "NO2",
+        "molecularWeight": 46.0055
+      },
+      {
+        "name": "Nitric Acid",
+        "formula": "HNO3",
+        "molecularWeight": 63.01284
+      },
+      {
+        "name": "Ammonia",
+        "formula": "NH3",
+        "molecularWeight": 17.03052
+      },
+      {
+        "name": "Nitrous Oxide",
+        "formula": "N2O",
+        "molecularWeight": 44.013
+      },
+      {
+        "name": "Nitrogen Triiodide",
+        "formula": "NI3",
+        "molecularWeight": 394.695
+      }
+    ]
   },
   {
     "name": "Fluorine",
@@ -58,7 +179,35 @@
     "period": 2,
     "block": "p",
     "electronConfiguration": "[He] 2s2 2p5",
-    "electronegativity": 3.98
+    "electronegativity": 3.98,
+    "image": "https://cdn.mos.cms.futurecdn.net/c3ssorLmzqZDMDT2zzdmYj-1200-80.jpg",
+    "compounds": [
+      {
+        "name": "Boron Trifluoride",
+        "formula": "BF3",
+        "molecularWeight": 67.806
+      },
+      {
+        "name": "Fluorine Gas",
+        "formula": "F2",
+        "molecularWeight": 37.996
+      },
+      {
+        "name": "Hydrogen Fluoride",
+        "formula": "HF",
+        "molecularWeight": 20.006
+      },
+      {
+        "name": "Sulfur Hexafluoride",
+        "formula": "SF6",
+        "molecularWeight": 146.055
+      },
+      {
+        "name": "Fluorine Nitrate",
+        "formula": "FNO3",
+        "molecularWeight": 83.005
+      }
+    ]
   },
   {
     "name": "Chlorine",
@@ -70,7 +219,35 @@
     "period": 2,
     "block": "p",
     "electronConfiguration": "[Ne] 3s2 3p5",
-    "electronegativity": 3.16
+    "electronegativity": 3.16,
+    "image": "https://engineeredlabs.com/cdn/shop/products/IMG_9121.jpg?v=1687554764",
+    "compounds": [
+      {
+        "name": "Sodium Chloride",
+        "formula": "NaCl",
+        "molecularWeight": 58.44
+      },
+      {
+        "name": "Chlorine Gas",
+        "formula": "Cl2",
+        "molecularWeight": 70.906
+      },
+      {
+        "name": "Hydrogen Chloride",
+        "formula": "HCl",
+        "molecularWeight": 36.461
+      },
+      {
+        "name": "Chlorine Dioxide",
+        "formula": "ClO2",
+        "molecularWeight": 67.452
+      },
+      {
+        "name": "Chlorine Trifluoride",
+        "formula": "ClF3",
+        "molecularWeight": 92.451
+      }
+    ]
   },
   {
     "name": "Lithium",
@@ -82,7 +259,35 @@
     "period": 2,
     "block": "s-block",
     "electronConfiguration": "[He] 2s1",
-    "electronegativity": 0.98
+    "electronegativity": 0.98,
+    "image": "https://investingnews.com/media-library/lithium-periodic-symbol.jpg?id=32845290&width=1200&height=600&coordinates=0%2C500%2C0%2C500",
+    "compounds": [
+      {
+        "name": "Lithium Hydride",
+        "formula": "LiH",
+        "molecularWeight": 7.95
+      },
+      {
+        "name": "Lithium Carbonate",
+        "formula": "Li2CO3",
+        "molecularWeight": 73.891
+      },
+      {
+        "name": "Lithium Hydroxide",
+        "formula": "LiOH",
+        "molecularWeight": 23.95
+      },
+      {
+        "name": "Lithium Chloride",
+        "formula": "LiCl",
+        "molecularWeight": 42.394
+      },
+      {
+        "name": "Lithium Nitrate",
+        "formula": "LiNO3",
+        "molecularWeight": 68.946
+      }
+    ]
   },
   {
     "name": "Beryllium",
@@ -94,7 +299,35 @@
     "period": 2,
     "block": "s-block",
     "electronConfiguration": "[He] 2s2",
-    "electronegativity": 1.57
+    "electronegativity": 1.57,
+    "image": "https://images.newscientist.com/wp-content/uploads/2023/06/14213843/SEI_160227394.jpg",
+    "compounds": [
+      {
+        "name": "Beryllium Oxide",
+        "formula": "BeO",
+        "molecularWeight": 25.01
+      },
+      {
+        "name": "Beryllium Chloride",
+        "formula": "BeCl2",
+        "molecularWeight": 79.918
+      },
+      {
+        "name": "Beryllium Nitrate",
+        "formula": "Be(NO3)2",
+        "molecularWeight": 133.025
+      },
+      {
+        "name": "Beryllium Sulfate",
+        "formula": "BeSO4",
+        "molecularWeight": 105.07
+      },
+      {
+        "name": "Beryllium Fluoride",
+        "formula": "BeF2",
+        "molecularWeight": 47.007
+      }
+    ]
     }, 
     {
       "name": "Boron",
@@ -106,7 +339,35 @@
       "period": 2,
       "block": "p",
       "electronConfiguration": "[He] 2s2 2p1",
-      "electronegativity": 2.04
+      "electronegativity": 2.04,
+      "image": "https://engineeredlabs.com/cdn/shop/files/IMG_1771.png?v=1687545276",
+      "compounds": [
+        {
+          "name": "Boron Trifluoride",
+          "formula": "BF3",
+          "molecularWeight": 67.806
+        },
+        {
+          "name": "Boron Oxide",
+          "formula": "B2O3",
+          "molecularWeight": 69.618
+        },
+        {
+          "name": "Boron Nitride",
+          "formula": "BN",
+          "molecularWeight": 24.817
+        },
+        {
+          "name": "Boron Carbide",
+          "formula": "B4C",
+          "molecularWeight": 55.255
+        },
+        {
+          "name": "Boron Sulfide",
+          "formula": "B2S3",
+          "molecularWeight": 117.862
+        }
+      ]
     },
     {
       "name": "Helium",
@@ -118,7 +379,11 @@
       "period": 1,
       "block": "s-block",
       "electronConfiguration": "1s2",
-      "electronegativity": 0
+      "electronegativity": 0,
+      "image": "https://humanlife.asia/wp-content/uploads/2018/08/Human-helium.jpg",
+      "compounds": [
+      
+      ]
     },
     {
       "name": "Neon",
@@ -130,7 +395,11 @@
       "period": 2,
       "block": "p",
       "electronConfiguration": "[He] 2s2 2p6",
-      "electronegativity": 0
+      "electronegativity": 0,
+      "image": "https://scied.ucar.edu/sites/default/files/media/images/neon_light_800x600.jpg",
+      "compounds": [
+      
+      ]
     },
     {
       "name": "Sodium",
@@ -142,7 +411,35 @@
       "period": 3,
       "block": "s",
       "electronConfiguration": "[Ne] 3s1",
-      "electronegativity": 0.93
+      "electronegativity": 0.93,
+      "image": "https://www.science.org/do/10.1126/science.aax7615/abs/sodium_16x9.jpg",
+      "compounds": [
+        {
+          "name": "Sodium Chloride",
+          "formula": "NaCl",
+          "molecularWeight": 58.44
+        },
+        {
+          "name": "Sodium Hydroxide",
+          "formula": "NaOH",
+          "molecularWeight": 39.997
+        },
+        {
+          "name": "Sodium Bicarbonate",
+          "formula": "NaHCO3",
+          "molecularWeight": 84.0066
+        },
+        {
+          "name": "Sodium Nitrate",
+          "formula": "NaNO3",
+          "molecularWeight": 84.9947
+        },
+        {
+          "name": "Sodium Sulfate",
+          "formula": "Na2SO4",
+          "molecularWeight": 142.042
+        }
+      ]
     },
     {
       "name": "Magnesium",
@@ -154,7 +451,35 @@
       "period": 3,
       "block": "s",
       "electronConfiguration": "[Ne] 3s2",
-      "electronegativity": 1.31
+      "electronegativity": 1.31,
+      "image": "https://cdn.britannica.com/38/131138-050-62E0CD67/Magnesium-magnesium-crystals-processing-crust-Earth.jpg",
+      "compounds": [
+        {
+          "name": "Magnesium Oxide",
+          "formula": "MgO",
+          "molecularWeight": 40.3044
+        },
+        {
+          "name": "Magnesium Hydroxide",
+          "formula": "Mg(OH)2",
+          "molecularWeight": 58.3197
+        },
+        {
+          "name": "Magnesium Chloride",
+          "formula": "MgCl2",
+          "molecularWeight": 95.211
+        },
+        {
+          "name": "Magnesium Nitrate",
+          "formula": "Mg(NO3)2",
+          "molecularWeight": 148.314
+        },
+        {
+          "name": "Magnesium Sulfate",
+          "formula": "MgSO4",
+          "molecularWeight": 120.366
+        }
+      ]
     }
 ]
 

@@ -47,9 +47,9 @@ const PeriodicTable = () => {
 
         {data && (
         <div className="card " style={{
-            'width': '30%'}}>
+            'width': '20%'}}>
             <div className="card-body">
-                <h4 className="card-title">{data.element.name} - {data.element.symbol}</h4>
+                <h4 className="card-title">{data.element.symbol} - {data.element.name} </h4>
                 <p className="card-text">Atomic Number: {data.element.atomicNumber}</p>
                 <p className="card-text">Atomic Mass: {data.element.atomicMass}</p>
                 <p className="card-text">Category: {data.element.category}</p>
@@ -58,7 +58,7 @@ const PeriodicTable = () => {
                 <p className="card-text">Block: {data.element.block}</p>
                 <p className="card-text">Electronegativity: {data.element.electronegativity}</p>
                 <p className="card-text">Electron Configuration: {data.element.electronConfiguration}</p>
-                <a href="/profile" className="btn btn-primary">Save Element!</a>
+                <a href="/profile" className="btn btn-primary" id="save">Save Element!</a>
             </div>
         </div>   
         )}

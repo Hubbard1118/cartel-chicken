@@ -30,9 +30,9 @@
 .buttons {
     box-sizing: border-box;
     font-family: "Poppins", "Georgia";
-    color: silver;
-    background-color: var(--gray-blue);
-    border: 3px solid blue;
+    color: black;
+    background-color: #43B3AE;
+    border: 3px solid transparent;
     transition: ease-in-out .2s;
 
     border-radius: 4px;
@@ -40,8 +40,8 @@
 }
 
 .buttons:hover{
-    border: 3px solid blue;
-    background-color: purple;
+    border: 3px solid black;
+    background-color: #FEBB01ff;
 
 }
 

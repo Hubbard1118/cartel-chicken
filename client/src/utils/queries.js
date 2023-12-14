@@ -32,6 +32,7 @@ query element($name: String!) {
     block
     electronConfiguration
     electronegativity
+    image
   }
 }`
 

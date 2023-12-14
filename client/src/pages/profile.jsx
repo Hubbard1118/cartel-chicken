@@ -99,14 +99,14 @@ const CardImage = styled.img`
 
 // ProfilePage Component
 const ProfilePage = () => {
-  const userName = "Test User";
+  const userName = "My";
 
 
   return (
     <div className='profile-wrapper'>
       <Container>
         <Navbar className='navbar-container'>
-        <img src="./public/chem.svg" alt="Logo" />
+        <img src="./public/chem.svg" alt="Logo"/>
         <ProfileHeader className='profileHeader'>
           <h1>{userName}'s Profile</h1>
         </ProfileHeader>

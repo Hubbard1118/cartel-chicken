@@ -13,6 +13,7 @@ type Auth {
 }
 
 type Element {
+  elementId: ID!
   name: String
   symbol: String
   atomicNumber: Float

@@ -79,6 +79,12 @@ const Navbar = styled.nav`
     color: white;
     align-self: center;
     font-weight: bold;
+    @media (max-width: 600px) {
+      font-size: 30px;
+    }
+    @media (max-width: 500px) {
+      font-size: 25px;
+    }
   }
   ul {
     list-style: none;
@@ -131,8 +137,9 @@ const Login = (props) => {
     <>
       <Navbar className='navbar-container'>
         <img src="./public/chem.svg" alt="Logo" />
-        <h1>Chem Chicken</h1>
-        {/* logout */}
+        <div className='loginTitle-container'>
+          <h1>Chem Chicken</h1>
+        </div>
         <ul>
           <li>
           <Link to="/signup">

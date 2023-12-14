@@ -179,6 +179,21 @@
 
 }
 
+.loginTitle-container {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+
+.signupTitle-container {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-left: 34px;
+}
+
 .components-container h2 {
     color: white;
 }

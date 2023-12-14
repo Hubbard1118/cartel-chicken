@@ -77,10 +77,10 @@ const resolvers = {
       }  
     throw AuthenticationError
     },
-    deleteElement: async (parent, {elementData}, {user} ) =>{ 
-      if (user) {
+    deleteElement: async (parent, {elementData}, context ) =>{ 
+      if (context.user) {
         const updatedUser = await User.findOneAndUpdate(
-          {_id: user._id},
+          {_id: context.user._id},
           {$pull: {elements: elementData}},
           {new: true},
           )

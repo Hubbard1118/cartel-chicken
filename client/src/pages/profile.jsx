@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { GET_ELEMENTS_BY_USER } from "../utils/queries";
 import { useQuery } from '@apollo/client';
 import { useEffect, useState } from 'react';
+import { REMOVE_ELEMENT } from "../utils/mutations";
+import { useMutation } from '@apollo/client';
 
 // Styled Components
 const Container = styled.div`
@@ -105,7 +107,49 @@ const Wrapper = styled.div`
 // ProfilePage Component
 const ProfilePage = () => {
   const [elements, setElements] = useState([]);
-  const { loading, error, data } = useQuery(GET_ELEMENTS_BY_USER);
+  const [{user},  loading, error, data ] = useQuery(GET_ELEMENTS_BY_USER);
+  const [removeElement] = useMutation(REMOVE_ELEMENT);
+
+  const handleRemoveElement = async () => {
+    //Get Elements
+      console.log(user);
+
+      const elementToSave = {
+        _id: data.element._id,
+        name: data.element.name,
+        symbol: data.element.symbol,
+        atomicNumber: data.element.atomicNumber,
+        atomicMass: data.element.atomicMass,
+        category: data.element.category,
+        group: data.element.group,
+        period: data.element.period,
+        block: data.element.block,
+        electronConfiguration: data.element.electronConfiguration,
+        electronegativity: data.element.electronegativity,
+      }
+    
+      console.log(elementToSave);
+      // get token
+      const token = Auth.loggedIn() ? Auth.getToken() : null;
+  
+      if (!token) {
+        return false;
+      }
+
+      try {
+        const elementSaved = await removeElement({
+          variables: { elementData : elementToSave },
+        });
+
+  
+        // setSavedElementIds([...savedElementsIds, elementToSave._id]);
+        console.log("Test2");
+        console.log(elementSaved);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    
   
   
   useEffect(() => {
@@ -125,7 +169,7 @@ const ProfilePage = () => {
         <Navbar className='navbar-container'>
         <img src="./public/chem.svg" alt="Logo"/>
         <ProfileHeader className='profileHeader'>
-          <h1>{data.user.username}'s Profile</h1>
+          <h1>'s Profile</h1>
         </ProfileHeader>
           {/* logout */}
           <ul>
@@ -159,7 +203,7 @@ const ProfilePage = () => {
                 <p className="card-text">Block: {element.block}</p>
                 <p className="card-text">Electronegativity: {element.electronegativity}</p>
                 <p className="card-text">Electron Configuration: {element.electronConfiguration}</p>
-                {/* <a onClick={() => handleSaveElement(element.elementId)} className="btn btn-primary" id="save">Save Element!</a> */}
+                <a onClick={() => handleRemoveElement(element.elementId)} className="btn btn-primary" >Delete</a>
             </div>
           </div>
         </CardContainer>

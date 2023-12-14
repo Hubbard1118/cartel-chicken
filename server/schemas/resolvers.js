@@ -35,7 +35,7 @@ const resolvers = {
     },
     me: async (parent, args, context) => {
       if (context.user) {
-        return User.findOne({ _id: context.user._id });
+        return User.findOne({ _id: context.user._id }).populate("elements").select("-__v -password");
       }
       throw AuthenticationError;
     },
@@ -65,6 +65,28 @@ const resolvers = {
 
       return { token, user };
     },
+    savedElements: async (parent, {elementData}, context ) =>{ 
+      if (context.user) {
+        const updatedUser = await User.findByIdAndUpdate(
+          {_id: context.user._id},
+          {$push: {elements: elementData}},
+          {new: true},
+          )
+          return updatedUser;
+      }  
+    throw AuthenticationError
+    },
+    deleteElement: async (parent, {elementId}, context ) =>{ 
+      if (context.user) {
+        const updatedUser = await User.findOneAndUpdate(
+          {_id: context.user._id},
+          {$pull: {elements: elementId}},
+          {new: true},
+          )
+          return updatedUser;
+      }  
+    throw AuthenticationError
+    }
   },
 };
 

@@ -23,3 +23,25 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+
+export const ADD_ELEMENT = gql`
+mutation savedElements($elementData: elementData) {
+  _id
+  username
+  email
+  password
+  elements {
+    name
+    symbol
+    atomicNumber
+    atomicMass
+    category
+    group
+    period
+    block
+    electronConfiguration
+    electronegativity
+    image
+  }
+}`;

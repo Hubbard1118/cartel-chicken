@@ -97,6 +97,7 @@ const PeriodicTable = () => {
                 <p className="card-text">Block: {data.element.block}</p>
                 <p className="card-text">Electronegativity: {data.element.electronegativity}</p>
                 <p className="card-text">Electron Configuration: {data.element.electronConfiguration}</p>
+                <img src={data.element.image} width='250' height='250'></img>
                 <a onClick={() => handleSaveElement(element.elementId)} className="btn btn-primary" id="save">Save Element!</a>
             </div>
         </div>   

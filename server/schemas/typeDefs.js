@@ -4,6 +4,7 @@ type User {
   username: String
   email: String
   password: String
+  elements: [Element]
 }
 
 type Auth {
@@ -12,6 +13,20 @@ type Auth {
 }
 
 type Element {
+  name: String
+  symbol: String
+  atomicNumber: Float
+  atomicMass: String
+  category: String
+  group: Float
+  period: Float
+  block: String
+  electronConfiguration: String
+  electronegativity: Float
+  image: String
+}
+input ElementInput {
+  elementId: ID!
   name: String
   symbol: String
   atomicNumber: Float
@@ -46,6 +61,8 @@ type Query {
 type Mutation {
   addUser(username: String!, email: String!, password: String!): Auth
   login(email: String!, password: String!): Auth
+  savedElements(elementData: ElementInput!): User
+  deleteElement(elementId: ID! ): User
 }
 `;
 

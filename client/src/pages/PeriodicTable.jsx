@@ -2,6 +2,7 @@ import "./periodicTable.css";
 import element_data from "../PeriodicTableJSON.json";
 import { useLazyQuery } from "@apollo/client";
 import { GET_ONE_ELEMENT } from "../utils/queries";
+import { ADD_ELEMENT } from "../utils/mutations";
 import { useState } from "react";
 import Card from "./Card";
 
@@ -19,6 +20,12 @@ const PeriodicTable = () => {
         setSelectedElement(elementName);
     };
     if (dataLoading) return <p>Loading...</p>;
+
+    const handleSavedBooks = async (elementName) => {
+        await savedElements ()
+
+        
+    }
 
   return (
     <>

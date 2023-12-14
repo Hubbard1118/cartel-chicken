@@ -26,24 +26,30 @@ export const ADD_USER = gql`
 
 
 export const ADD_ELEMENT = gql`
-  mutation savedElements($elementData: ElementInput!) {
-    savedElements(elementData: $elementData) {
+mutation Mutation($elementData: ElementInput!) {
+  savedElements(elementData: $elementData) {
+    _id
+    username
+    email
+    password
+    elements {
       _id
-      username
-      email
-      password
-      elements {
+      name
+      symbol
+      atomicNumber
+      atomicMass
+      category
+      group
+      period
+      block
+      electronConfiguration
+      electronegativity
+      image
+      compounds {
         name
-        symbol
-        atomicNumber
-        atomicMass
-        category
-        group
-        period
-        block
-        electronConfiguration
-        electronegativity
-        image
+        formula
+        molecularWeight
       }
     }
+  }
 }`;

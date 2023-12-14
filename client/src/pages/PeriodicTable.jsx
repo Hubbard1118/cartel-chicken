@@ -19,7 +19,6 @@ const PeriodicTable = () => {
   });
 
   const handleButtonClick = async (elementName) => {
-      console.log(elementName);
        await element({
           variables: {
               name: elementName
@@ -28,28 +27,39 @@ const PeriodicTable = () => {
         setSelectedElement(elementName);
     };
 
-    const handleSaveElement = async (elementId) => {
+    const handleSaveElement = async () => {
+      //Get Elements
+        const elementToSave = {
+          _id: data.element._id,
+          name: data.element.name,
+          symbol: data.element.symbol,
+          atomicNumber: data.element.atomicNumber,
+          atomicMass: data.element.atomicMass,
+          category: data.element.category,
+          group: data.element.group,
+          period: data.element.period,
+          block: data.element.block,
+          electronConfiguration: data.element.electronConfiguration,
+          electronegativity: data.element.electronegativity,
+          image: data.element.image,
+        }
 
-        const elementToSave = savedElement.find((element) => element.elementId === elementId);
         // get token
         const token = Auth.loggedIn() ? Auth.getToken() : null;
     
         if (!token) {
           return false;
         }
-    
+
         try {
-          const { data } = await savedElement({
-            variables: { $elementData : { ...elementToSave }},
+          const elementSaved = await savedElement({
+            variables: { elementData : elementToSave },
           });
+  
     
-          
-          console.log(data.savedElement);
-    
-          // if book successfully saves to user's account, save book id to state
-          setSavedElementIds([...savedElementsIds, elementToSave.elementId]);
-          
-          console.log(savedElementsIds);
+          // setSavedElementIds([...savedElementsIds, elementToSave._id]);
+          console.log("Test2");
+          console.log(elementSaved);
         } catch (err) {
           console.error(err);
         }
@@ -75,7 +85,7 @@ const PeriodicTable = () => {
         </div>
 
         {data && (
-        <div className="card " style={{
+        <div className="card1 " style={{
             'width': '20%'}}>
             <div className="card-body">
                 <h4 className="card-title">{data.element.symbol} - {data.element.name} </h4>

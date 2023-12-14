@@ -16,11 +16,12 @@ export const ELEMENT_QUERY = gql`
     electronegativity
     }
   }
-`;
+`
 
 export const  GET_ONE_ELEMENT = gql`
 query element($name: String!) {
   element(name: $name) {
+    _id
     name
     symbol
     atomicNumber
@@ -31,6 +32,30 @@ query element($name: String!) {
     block
     electronConfiguration
     electronegativity
+  }
+}`
+
+export const GET_ELEMENTS_BY_USER = gql`
+query User {
+  user {
+    _id
+    username
+    email
+    password
+    elements {
+      _id
+      name
+      symbol
+      atomicNumber
+      atomicMass
+      category
+      group
+      period
+      block
+      electronConfiguration
+      electronegativity
+      image
+    }
   }
 }`
 

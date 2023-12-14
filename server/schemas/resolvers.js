@@ -4,10 +4,10 @@ const { signToken, AuthenticationError } = require('../utils/auth');
 const resolvers = {
   Query: {
     users: async () => {
-      return User.find().populate('');
+      return User.find().populate('elements');
     },
-    user: async (parent, { userId}) => {
-      return User.findOne({ _id: userId }).populate('');
+    user: async (parent, _, context) => {
+      return User.findOne({ _id: context.user }).populate('elements');
     },
     elements: async() => {
       return Elements.find();
@@ -71,16 +71,17 @@ const resolvers = {
           {_id: context.user._id},
           {$push: {elements: elementData}},
           {new: true},
-          )
+          ).populate('elements');
+          console.log(updatedUser);
           return updatedUser;
       }  
     throw AuthenticationError
     },
-    deleteElement: async (parent, {elementId}, context ) =>{ 
-      if (context.user) {
+    deleteElement: async (parent, {elementData}, {user} ) =>{ 
+      if (user) {
         const updatedUser = await User.findOneAndUpdate(
-          {_id: context.user._id},
-          {$pull: {elements: elementId}},
+          {_id: user._id},
+          {$pull: {elements: elementData}},
           {new: true},
           )
           return updatedUser;

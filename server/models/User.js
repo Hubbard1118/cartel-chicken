@@ -19,6 +19,10 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
+    elements: [{
+      type: Schema.Types.ObjectId,
+      ref: 'Element',
+    }]
   },
 );
 

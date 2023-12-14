@@ -17,12 +17,21 @@ const Navbar = styled.nav`
     align-self: center;
     font-weight: bold;
     margin-left: 10%;
+    @media (max-width: 684px) {
+      font-size: 30px;
+    }
+    @media (max-width: 641.6px) {
+      font-size: 25px;
+    }
   }
   ul {
     list-style: none;
     padding: 20px 20px;
     display: flex;
     justify-content: flex-end;
+    @media (max-width: 641.6px) {
+      padding-top: 0px;
+    }
     li {
       margin-left: 10px;
       button {

@@ -79,6 +79,12 @@ const Navbar = styled.nav`
     color: white;
     align-self: center;
     font-weight: bold;
+    @media (max-width: 600px) {
+      font-size: 30px;
+    }
+    @media (max-width: 500px) {
+      font-size: 25px;
+    }
   }
   ul {
     list-style: none;

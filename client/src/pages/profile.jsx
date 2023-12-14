@@ -24,6 +24,10 @@ const Navbar = styled.nav`
     padding: 20px 20px;
     display: flex;
     justify-content: flex-end;
+    @media screen and (max-width: 624px) {
+      flex-wrap: wrap;
+      padding-top: 0px;
+    }
     li {
       margin-left: 10px;
       button {
@@ -46,6 +50,12 @@ const ProfileHeader = styled.header`
     font-size: 3rem;
     color: white;
     font-weight: bold;
+    @media screen and (max-width: 898.4px) {
+      font-size: 30px;
+    }
+    @media screen and (max-width: 530px) {
+      font-size: 20px;
+    }
   }
 `;
 
@@ -70,6 +80,9 @@ const CardContainer = styled.div`
   background-color: #F95D18ff;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 700px) {
+    flex-wrap: wrap;  
+  }
    button {
     background-color: #FEBB01ff;
     border: none;

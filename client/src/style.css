@@ -222,13 +222,24 @@
     max-width: 100vw;
 }
 
+.card1 {
+    background-color: #F95D18ff;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin-left: 40%;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
 .card {
     background-color: #F95D18ff;
     align-items: center;
     justify-content: center;
-    padding: 10px;
     color: white;
-    margin-top: 5%;
     font-weight: bold;
-    margin-left: 40%;
+    width: 300px;
+    
 }

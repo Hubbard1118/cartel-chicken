@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Auth from '../utils/auth';
 import { Link } from 'react-router-dom';
+import { GET_ELEMENTS_BY_USER } from "../utils/queries";
+import { useQuery } from '@apollo/client';
+import { useEffect, useState } from 'react';
 
 // Styled Components
 const Container = styled.div`
@@ -72,14 +75,13 @@ const CardContainer = styled.div`
   border: 4px solid #F95D18ff;
   align-items: center;
   border-radius: 10px;
-  padding: 20px;
   margin: 16px;
-  max-width: 300px;
-  height: 300px;
+  width: 300px;
+  height: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #F95D18ff;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   @media screen and (max-width: 700px) {
     flex-wrap: wrap;  
   }
@@ -93,27 +95,29 @@ const CardContainer = styled.div`
    }
 `;
 
-const CardTitle = styled.h3`
-  color: #FEBB01ff;
-  margin-bottom: 8px;
-`;
-
-const CardText = styled.p`
-  color: white;
-`;
-
-const CardImage = styled.img`
-  max-width: 100%;
-  align-items: center;
-  height: 75px;
-  border-radius: 8px;
-  margin: 8px;
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
 `;
 
 // ProfilePage Component
 const ProfilePage = () => {
-  const userName = "My";
+  const [elements, setElements] = useState([]);
+  const { loading, error, data } = useQuery(GET_ELEMENTS_BY_USER);
+  
+  
+  useEffect(() => {
+    if(data){
+      setElements(data.user.elements);
+      console.log(data);
+    }
+  },[data]);
 
+  if(elements) {
+    console.log(elements);
+  }
 
   return (
     <div className='profile-wrapper'>
@@ -121,7 +125,7 @@ const ProfilePage = () => {
         <Navbar className='navbar-container'>
         <img src="./public/chem.svg" alt="Logo"/>
         <ProfileHeader className='profileHeader'>
-          <h1>{userName}'s Profile</h1>
+          <h1>{data.user.username}'s Profile</h1>
         </ProfileHeader>
           {/* logout */}
           <ul>
@@ -138,21 +142,30 @@ const ProfilePage = () => {
         </Navbar>
 
         <div className='break'></div>
-
-        <div className='compound-container'>
-          <MainContent className='components-container'>
-          <h2>Learn YOUR Compounds:</h2>
-          </MainContent>
-          
-          <CardContainer>
-          <CardTitle>Oxygen</CardTitle>
-          <CardText>Formula: </CardText>
-          <CardText>Molecular Weight: </CardText>
-        <CardImage src="https://www.newtondesk.com/wp-content/uploads/2019/04/oxygen-electron-configuration.png" alt={name} />
-        <button>Delete</button>
-          </CardContainer>
-        </div>
-        <footer className='home-footer'>MADE BY <img src="./public/mern&burn.svg" alt="dev" /> TEAM!</footer>
+        <Wrapper> 
+      {elements.map((element, index) => {
+        {console.log("Test")}
+        return ( 
+            
+        <CardContainer  key={index}>
+          <div className="card " >
+            <div className="card-body">
+                <h4 className="card-title">{element.symbol} - {element.name} </h4>
+                <p className="card-text">Atomic Number: {element.atomicNumber}</p>
+                <p className="card-text">Atomic Mass: {element.atomicMass}</p>
+                <p className="card-text">Category: {element.category}</p>
+                <p className="card-text">Group: {element.group}</p>
+                <p className="card-text">Period: {element.period}</p>
+                <p className="card-text">Block: {element.block}</p>
+                <p className="card-text">Electronegativity: {element.electronegativity}</p>
+                <p className="card-text">Electron Configuration: {element.electronConfiguration}</p>
+                {/* <a onClick={() => handleSaveElement(element.elementId)} className="btn btn-primary" id="save">Save Element!</a> */}
+            </div>
+          </div>
+        </CardContainer>
+        )
+      })}
+      </Wrapper>
       </Container>
     </div>  
   );

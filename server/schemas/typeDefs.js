@@ -13,7 +13,7 @@ type Auth {
 }
 
 type Element {
-  elementId: ID!
+  _id: ID!
   name: String
   symbol: String
   atomicNumber: Float
@@ -29,7 +29,7 @@ type Element {
 }
 
 input ElementInput {
-  elementId: ID!
+  _id: ID!
   name: String
   symbol: String
   atomicNumber: Float
@@ -51,7 +51,7 @@ type Compound {
 
 type Query {
   users: [User]!
-  user(userId: ID!): User
+  user: User
   elements: [Element]
   element(name: String!): Element
   compounds: [Compound]
@@ -63,7 +63,7 @@ type Query {
 type Mutation {
   addUser(username: String!, email: String!, password: String!): Auth
   login(email: String!, password: String!): Auth
-  savedElements(elementData: ElementInput!): User
+  savedElements(elementData: ElementInput): User
   deleteElement(elementId: ID! ): User
 }
 `;

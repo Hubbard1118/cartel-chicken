@@ -82,7 +82,7 @@ const Home = () => {
       </Navbar>
       <StyledH1>The Periodic Table of Elements</StyledH1>
       <PeriodicTable />
-      <footer className='home-footer'>Made by <img src="./public/mern&burn.svg" alt="dev" /></footer>
+      <footer className='home-footer'>MADE BY <img src="./public/mern&burn.svg" alt="dev"/>TEAM</footer>
     </div> 
     </> 
      

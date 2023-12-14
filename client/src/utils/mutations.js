@@ -53,3 +53,32 @@ mutation Mutation($elementData: ElementInput!) {
     }
   }
 }`;
+
+export const REMOVE_ELEMENT = gql`
+mutation Mutation($elementData: ElementInput!) {
+  removeElement(elementData: $elementData) {
+    _id
+    username
+    email
+    password
+    elements {
+      _id
+      name
+      symbol
+      atomicNumber
+      atomicMass
+      category
+      group
+      period
+      block
+      electronConfiguration
+      electronegativity
+      image
+      compounds {
+        name
+        formula
+        molecularWeight
+      }
+    }
+  }
+}`;

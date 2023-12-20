@@ -58,8 +58,7 @@ const PeriodicTable = () => {
           });
   
     
-          // setSavedElementIds([...savedElementsIds, elementToSave._id]);
-          console.log("Test2");
+
           console.log(elementSaved);
         } catch (err) {
           console.error(err);

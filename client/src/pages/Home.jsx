@@ -58,9 +58,6 @@ const StyledH1 = styled.h1`
 
 
 const Home = () => {
-  // const { loading, data } = useQuery(ELEMENT_QUERY, {
-  //   fetchPolicy: "no-cache"
-  // });
 
   return (
     <>

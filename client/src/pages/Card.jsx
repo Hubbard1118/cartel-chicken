@@ -1,5 +1,6 @@
 import React from 'react';
 
+// component for Card  that 
 const Card = (props) => {
   return (
     <div className="card">

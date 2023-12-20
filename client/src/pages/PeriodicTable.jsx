@@ -18,6 +18,7 @@ const PeriodicTable = () => {
     return () => saveElementIds(savedElementsIds);
   });
 
+  // Query by name based on element clicked
   const handleButtonClick = async (elementName) => {
        await element({
           variables: {
@@ -26,7 +27,7 @@ const PeriodicTable = () => {
         });
         setSelectedElement(elementName);
     };
-
+// Add element to User profile
     const handleSaveElement = async () => {
       //Get Elements
         const elementToSave = {
@@ -68,6 +69,7 @@ const PeriodicTable = () => {
 
   return (
     <>
+          {/*controls periodic table  */}
         <div className="periodic-table-wrapper">
         {element_data.elements.map((element) => (
             <button 
@@ -83,7 +85,7 @@ const PeriodicTable = () => {
             </button>
         ))}
         </div>
-
+{/* conditionally renders card when clicked */}
         {data && (
         <div className="card1 " style={{
             'width': '20%'}}>
